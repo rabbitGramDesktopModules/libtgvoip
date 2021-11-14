@@ -16,7 +16,6 @@ JitterBuffer::JitterBuffer(MediaStreamItf *out, uint32_t step):bufferPool(JITTER
 	if(out)
 		out->SetCallback(JitterBuffer::CallbackOut, this);
 	this->step=step;
-	memset(slots, 0, sizeof(jitter_packet_t)*JITTER_SLOT_COUNT);
 	if(step<30){
 		minMinDelay=(uint32_t) ServerConfig::GetSharedInstance()->GetInt("jitter_min_delay_20", 6);
 		maxMinDelay=(uint32_t) ServerConfig::GetSharedInstance()->GetInt("jitter_max_delay_20", 25);
