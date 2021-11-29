@@ -5,6 +5,7 @@
 //
 
 #include "OpusDecoder.h"
+#include "EchoCanceller.h"
 #include "audio/Resampler.h"
 #include "logging.h"
 #include <assert.h>

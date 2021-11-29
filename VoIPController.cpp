@@ -12,6 +12,7 @@
 #include <string.h>
 #include <wchar.h>
 #include "VoIPController.h"
+#include "EchoCanceller.h"
 #include "logging.h"
 #include "threading.h"
 #include "Buffers.h"
@@ -78,7 +79,10 @@ VoIPController::VoIPController() : activeNetItfName(""),
 								   currentAudioOutput("default"),
 								   proxyAddress(""),
 								   proxyUsername(""),
-								   proxyPassword(""){
+								   proxyPassword(""),
+								   outputVolume(std::make_unique<effects::Volume>()),
+								   inputVolume(std::make_unique<effects::Volume>())
+{
 	seq=1;
 	lastRemoteSeq=0;
 	state=STATE_WAIT_INIT;
@@ -879,11 +883,11 @@ vector<uint8_t> VoIPController::GetPersistentState(){
 }
 
 void VoIPController::SetOutputVolume(float level){
-	outputVolume.SetLevel(level);
+	outputVolume->SetLevel(level);
 }
 
 void VoIPController::SetInputVolume(float level){
-	inputVolume.SetLevel(level);
+	inputVolume->SetLevel(level);
 }
 
 #if defined(__APPLE__) && TARGET_OS_OSX
@@ -1140,7 +1144,7 @@ void VoIPController::InitializeAudio(){
 	encoder->SetEchoCanceller(echoCanceller);
 	encoder->SetSecondaryEncoderEnabled(false);
 	if(config.enableVolumeControl){
-		encoder->AddAudioEffect(&inputVolume);
+		encoder->AddAudioEffect(inputVolume.get());
 	}
 
 #if defined(TGVOIP_USE_CALLBACK_AUDIO_IO)
@@ -1181,7 +1185,7 @@ void VoIPController::OnAudioOutputReady(){
 	stm->decoder=make_shared<OpusDecoder>(audioOutput, true, peerVersion>=6);
 	stm->decoder->SetEchoCanceller(echoCanceller);
 	if(config.enableVolumeControl){
-		stm->decoder->AddAudioEffect(&outputVolume);
+		stm->decoder->AddAudioEffect(outputVolume.get());
 	}
 	stm->decoder->SetJitterBuffer(stm->jitterBuffer);
 	stm->decoder->SetFrameDuration(stm->frameDuration);

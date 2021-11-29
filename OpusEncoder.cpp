@@ -5,6 +5,7 @@
 //
 
 #include "OpusEncoder.h"
+#include "EchoCanceller.h"
 #include <assert.h>
 #include <algorithm>
 #include "logging.h"

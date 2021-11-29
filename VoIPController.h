@@ -34,7 +34,6 @@
 #include "JitterBuffer.h"
 #include "OpusDecoder.h"
 #include "OpusEncoder.h"
-#include "EchoCanceller.h"
 #include "CongestionControl.h"
 #include "NetworkSocket.h"
 #include "Buffers.h"
@@ -54,6 +53,12 @@
 #define TGVOIP_PEER_CAP_VIDEO_DISPLAY 4
 
 namespace tgvoip{
+
+	class EchoCanceller;
+
+	namespace effects {
+	class Volume;
+	} // namespace effects
 
 	enum{
 		PROXY_NONE=0,
@@ -742,8 +747,8 @@ namespace tgvoip{
 		uint32_t noStreamsNopID=MessageThread::INVALID_ID;
 		uint32_t udpPingTimeoutID=MessageThread::INVALID_ID;
 
-		effects::Volume outputVolume;
-		effects::Volume inputVolume;
+		std::unique_ptr<effects::Volume> outputVolume;
+		std::unique_ptr<effects::Volume> inputVolume;
 
 		std::vector<uint32_t> peerVideoDecoders;
         int peerMaxVideoResolution=0;

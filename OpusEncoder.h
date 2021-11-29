@@ -12,7 +12,6 @@
 #include "threading.h"
 #include "BlockingQueue.h"
 #include "Buffers.h"
-#include "EchoCanceller.h"
 #include "utils.h"
 
 #include <stdint.h>
@@ -20,6 +19,13 @@
 struct OpusEncoder;
 
 namespace tgvoip{
+
+class EchoCanceller;
+
+namespace effects {
+class AudioEffect;
+} // namespace effects
+
 class OpusEncoder{
 public:
 	TGVOIP_DISALLOW_COPY_AND_ASSIGN(OpusEncoder);

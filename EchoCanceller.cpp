@@ -115,7 +115,7 @@ EchoCanceller::EchoCanceller(bool enableAEC, bool enableNS, bool enableAGC){
 
 EchoCanceller::~EchoCanceller(){
 #ifndef TGVOIP_NO_DSP
-	delete apm;
+	apm = nullptr;
 	delete audioFrame;
 	delete farendBufferPool;
 #endif
