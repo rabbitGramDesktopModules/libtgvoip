@@ -28,12 +28,14 @@ EchoCanceller::EchoCanceller(bool enableAEC, bool enableNS, bool enableAGC){
 	this->enableNS=enableNS;
 	isOn=true;
 
-	webrtc::Config extraConfig;
 #ifdef TGVOIP_USE_DESKTOP_DSP_BUNDLED
+	webrtc::Config extraConfig;
 	extraConfig.Set(new webrtc::DelayAgnostic(true));
-#endif
 
 	apm=webrtc::AudioProcessingBuilder().Create(extraConfig);
+#else
+	apm=webrtc::AudioProcessingBuilder().Create();
+#endif
 
 	webrtc::AudioProcessing::Config config;
 	config.echo_canceller.enabled = enableAEC;
