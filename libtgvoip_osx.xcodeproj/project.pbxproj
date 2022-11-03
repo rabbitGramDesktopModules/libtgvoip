@@ -3150,8 +3150,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"TGVOIP_USE_CUSTOM_CRYPTO=1",
-					DWEBRTC_NS_FLOAT,
+					WEBRTC_NS_FLOAT,
 					WEBRTC_POSIX,
 					WEBRTC_HAS_NEON,
 					WEBRTC_MAC,
@@ -3180,10 +3179,28 @@
 					"WebRtcAgc_ZeroCtrl=WebRtcAgc_ZeroCtrl1",
 					"WebRtcAgc_GetAddFarendError=WebRtcAgc_GetAddFarendError1",
 					"TGVOIP_INCLUDE_OPUS_PACKAGE=1",
+					"WebRtcSpl_MaxValueW16C=WebRtcSpl_MaxValueW16C1",
+					"WebRtcSpl_MinValueW16C=WebRtcSpl_MinValueW16C1",
+					"WebRtcSpl_MaxAbsValueW16C=WebRtcSpl_MaxAbsValueW16C1",
+					"WebRtcSpl_MaxValueW32C=WebRtcSpl_MaxValueW32C1",
+					"WebRtcSpl_MaxAbsValueW32C=WebRtcSpl_MaxAbsValueW32C1",
+					"WebRtcSpl_MinValueW32C=WebRtcSpl_MinValueW32C1",
+					"WebRtcSpl_MaxIndexW16=WebRtcSpl_MaxIndexW161",
+					"WebRtcSpl_MaxAbsIndexW16=WebRtcSpl_MaxAbsIndexW161",
+					"WebRtcSpl_MinIndexW16=WebRtcSpl_MinIndexW161",
+					"WebRtcSpl_MaxIndexW32=WebRtcSpl_MaxIndexW321",
+					"WebRtcSpl_MinIndexW32=WebRtcSpl_MinIndexW321",
+					"WebRtcSpl_MaxValueW16Neon=WebRtcSpl_MaxValueW16Neon1",
+					"WebRtcSpl_MaxAbsValueW16Neon=WebRtcSpl_MaxAbsValueW16Neon1",
+					"WebRtcSpl_MinValueW16Neon=WebRtcSpl_MinValueW16Neon1",
+					"WebRtcSpl_MaxValueW32Neon=WebRtcSpl_MaxValueW32Neon1",
+					"WebRtcSpl_MaxAbsValueW32Neon=WebRtcSpl_MaxAbsValueW32Neon1",
+					"WebRtcSpl_MinValueW32Neon=WebRtcSpl_MinValueW32Neon1",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$PROJECT_DIR/../../core-xprojects/libopus/build/libopus/include",
+					"$PROJECT_DIR/../../core-xprojects/openssl/build/openssl/include",
 					webrtc_dsp/,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
@@ -3195,7 +3212,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
-					"-DTGVOIP_USE_CUSTOM_CRYPTO",
 					"-DWEBRTC_POSIX",
 					"-DWEBRTC_APM_DEBUG_DUMP=0",
 					"-DTGVOIP_USE_DESKTOP_DSP",
@@ -3267,7 +3283,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"TGVOIP_USE_CUSTOM_CRYPTO=1",
 					TGVOIP_NO_OSX_PRIVATE_API,
 					DWEBRTC_NS_FLOAT,
 					WEBRTC_POSIX,
@@ -3298,10 +3313,28 @@
 					"WebRtcAgc_ZeroCtrl=WebRtcAgc_ZeroCtrl1",
 					"WebRtcAgc_GetAddFarendError=WebRtcAgc_GetAddFarendError1",
 					"TGVOIP_INCLUDE_OPUS_PACKAGE=1",
+					"WebRtcSpl_MaxValueW16C=WebRtcSpl_MaxValueW16C1",
+					"WebRtcSpl_MaxAbsValueW16C=WebRtcSpl_MaxAbsValueW16C1",
+					"WebRtcSpl_MinValueW16C=WebRtcSpl_MinValueW16C1",
+					"WebRtcSpl_MaxValueW32C=WebRtcSpl_MaxValueW32C1",
+					"WebRtcSpl_MaxAbsValueW32C=WebRtcSpl_MaxAbsValueW32C1",
+					"WebRtcSpl_MinValueW32C=WebRtcSpl_MinValueW32C1",
+					"WebRtcSpl_MaxIndexW16=WebRtcSpl_MaxIndexW161",
+					"WebRtcSpl_MaxAbsIndexW16=WebRtcSpl_MaxAbsIndexW161",
+					"WebRtcSpl_MinIndexW16=WebRtcSpl_MinIndexW161",
+					"WebRtcSpl_MaxIndexW32=WebRtcSpl_MaxIndexW321",
+					"WebRtcSpl_MinIndexW32=WebRtcSpl_MinIndexW321",
+					"WebRtcSpl_MaxValueW16Neon=WebRtcSpl_MaxValueW16Neon1",
+					"WebRtcSpl_MaxAbsValueW16Neon=WebRtcSpl_MaxAbsValueW16Neon1",
+					"WebRtcSpl_MinValueW16Neon=WebRtcSpl_MinValueW16Neon1",
+					"WebRtcSpl_MaxValueW32Neon=WebRtcSpl_MaxValueW32Neon1",
+					"WebRtcSpl_MaxAbsValueW32Neon=WebRtcSpl_MaxAbsValueW32Neon1",
+					"WebRtcSpl_MinValueW32Neon=WebRtcSpl_MinValueW32Neon1",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$PROJECT_DIR/../../core-xprojects/libopus/build/libopus/include",
+					"$PROJECT_DIR/../../core-xprojects/openssl/build/openssl/include",
 					webrtc_dsp/,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
@@ -3313,7 +3346,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
-					"-DTGVOIP_USE_CUSTOM_CRYPTO",
 					"-DWEBRTC_POSIX",
 					"-DWEBRTC_APM_DEBUG_DUMP=0",
 					"-DTGVOIP_USE_DESKTOP_DSP",
