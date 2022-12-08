@@ -1118,6 +1118,11 @@ void VoIPController::InitializeAudio(){
 	shared_ptr<Stream> outgoingAudioStream=GetStreamByType(STREAM_TYPE_AUDIO, true);
 	LOGI("before create audio io");
 	audioIO=audio::AudioIO::Create(currentAudioInput, currentAudioOutput);
+    if(audioIO->Failed()){
+        lastError=ERROR_AUDIO_IO;
+        SetState(STATE_FAILED);
+        return;
+    }
 	audioInput=audioIO->GetInput();
 	audioOutput=audioIO->GetOutput();
 #ifdef __ANDROID__

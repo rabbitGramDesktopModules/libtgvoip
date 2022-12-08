@@ -338,6 +338,9 @@
 		C2A87DDF1F4B6A61002D3F73 /* AudioInputAudioUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2A87DDB1F4B6A61002D3F73 /* AudioInputAudioUnit.cpp */; };
 		C2A87DE01F4B6A61002D3F73 /* AudioOutputAudioUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2A87DDD1F4B6A61002D3F73 /* AudioOutputAudioUnit.cpp */; };
 		C2A87DE41F4B6AD3002D3F73 /* AudioUnitIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2A87DE31F4B6AD3002D3F73 /* AudioUnitIO.cpp */; };
+		D0230E9F24A10AC600C6AE29 /* TgVoip.h in Headers */ = {isa = PBXBuildFile; fileRef = D0230E9D24A10AC600C6AE29 /* TgVoip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0230EA024A10AC600C6AE29 /* TgVoip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0230E9E24A10AC600C6AE29 /* TgVoip.cpp */; };
+		D0983E262568382200467703 /* libopus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0983E252568382100467703 /* libopus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1079,6 +1082,9 @@
 		C2A87DDD1F4B6A61002D3F73 /* AudioOutputAudioUnit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AudioOutputAudioUnit.cpp; path = os/darwin/AudioOutputAudioUnit.cpp; sourceTree = SOURCE_ROOT; };
 		C2A87DDE1F4B6A61002D3F73 /* AudioOutputAudioUnitOSX.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AudioOutputAudioUnitOSX.cpp; path = os/darwin/AudioOutputAudioUnitOSX.cpp; sourceTree = SOURCE_ROOT; };
 		C2A87DE31F4B6AD3002D3F73 /* AudioUnitIO.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AudioUnitIO.cpp; path = os/darwin/AudioUnitIO.cpp; sourceTree = SOURCE_ROOT; };
+		D0230E9D24A10AC600C6AE29 /* TgVoip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TgVoip.h; sourceTree = "<group>"; };
+		D0230E9E24A10AC600C6AE29 /* TgVoip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TgVoip.cpp; sourceTree = "<group>"; };
+		D0983E252568382100467703 /* libopus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = libopus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1094,6 +1100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0983E262568382200467703 /* libopus.framework in Frameworks */,
 				69DF15802237E96E00C1F8ED /* VideoToolbox.framework in Frameworks */,
 				692AB91F1E675F7000706ACC /* AudioToolbox.framework in Frameworks */,
 				692AB9201E675F7000706ACC /* AudioUnit.framework in Frameworks */,
@@ -2232,6 +2239,8 @@
 		692AB8861E6759BF00706ACC /* libtgvoip */ = {
 			isa = PBXGroup;
 			children = (
+				D0230E9E24A10AC600C6AE29 /* TgVoip.cpp */,
+				D0230E9D24A10AC600C6AE29 /* TgVoip.h */,
 				692AB8871E6759DD00706ACC /* audio */,
 				692AB88C1E6759DD00706ACC /* BlockingQueue.cpp */,
 				692AB88D1E6759DD00706ACC /* BlockingQueue.h */,
@@ -2331,6 +2340,7 @@
 		692AB9061E675E8700706ACC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D0983E252568382100467703 /* libopus.framework */,
 				69DF157F2237E96E00C1F8ED /* VideoToolbox.framework */,
 				692AB91C1E675F7000706ACC /* AudioToolbox.framework */,
 				692AB91D1E675F7000706ACC /* AudioUnit.framework */,
@@ -2419,6 +2429,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0230E9F24A10AC600C6AE29 /* TgVoip.h in Headers */,
 				69DF15622237DEBB00C1F8ED /* ScreamCongestionController.h in Headers */,
 				692AB9051E6759DD00706ACC /* VoIPServerConfig.h in Headers */,
 				69DF15722237DEDC00C1F8ED /* TGVVideoSource.h in Headers */,
@@ -2633,6 +2644,7 @@
 				691E07CF21A4FD7700F838EF /* gmm.cc in Sources */,
 				691E080921A4FD7700F838EF /* logging_webrtc.cc in Sources */,
 				691E05F121A4FD7600F838EF /* wav_header.cc in Sources */,
+				D0230EA024A10AC600C6AE29 /* TgVoip.cpp in Sources */,
 				691E062021A4FD7600F838EF /* energy.c in Sources */,
 				691E074621A4FD7700F838EF /* aecm_core.cc in Sources */,
 				691E06FD21A4FD7600F838EF /* down_sampler.cc in Sources */,
@@ -2926,7 +2938,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		697B6FCC2136DBA4004C8E54 /* DebugHockeyapp */ = {
+		697B6FCE2136DBA4004C8E54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -3001,163 +3013,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
-			name = DebugHockeyapp;
+			name = Debug;
 		};
-		697B6FCD2136DBA4004C8E54 /* Debug Auto Test */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					/usr/local/opt/openssl/include,
-					webrtc_dsp,
-				);
-				INFOPLIST_FILE = tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/opt/openssl/lib,
-					/usr/local/lib,
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = "-DTGVOIP_USE_CALLBACK_AUDIO_IO";
-				OTHER_LDFLAGS = (
-					"-lopus",
-					"-lcrypto",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.grishka.libtgvoipTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = "Debug Auto Test";
-		};
-		697B6FCE2136DBA4004C8E54 /* DebugAppStore */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					/usr/local/opt/openssl/include,
-					webrtc_dsp,
-				);
-				INFOPLIST_FILE = tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/opt/openssl/lib,
-					/usr/local/lib,
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = "-DTGVOIP_USE_CALLBACK_AUDIO_IO";
-				OTHER_LDFLAGS = (
-					"-lopus",
-					"-lcrypto",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.grishka.libtgvoipTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = DebugAppStore;
-		};
-		697B6FCF2136DBA4004C8E54 /* ReleaseHockeyapp */ = {
+		697B6FD02136DBA4004C8E54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -3225,344 +3083,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
-			name = ReleaseHockeyapp;
+			name = Release;
 		};
-		697B6FD02136DBA4004C8E54 /* ReleaseAppStore */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					/usr/local/opt/openssl/include,
-					webrtc_dsp,
-				);
-				INFOPLIST_FILE = tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/opt/openssl/lib,
-					/usr/local/lib,
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_CFLAGS = "-DTGVOIP_USE_CALLBACK_AUDIO_IO";
-				OTHER_LDFLAGS = (
-					"-lopus",
-					"-lcrypto",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.grishka.libtgvoipTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = ReleaseAppStore;
-		};
-		69EBC7982136D55A003CFE90 /* Debug Auto Test */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = "Debug Auto Test";
-		};
-		69EBC7992136D55A003CFE90 /* Debug Auto Test */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					webrtc_dsp,
-					/usr/local/include/opus,
-					/usr/local/opt/openssl/include,
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_CFLAGS = (
-					"-DWEBRTC_POSIX",
-					"-DWEBRTC_APM_DEBUG_DUMP=0",
-					"-DTGVOIP_USE_DESKTOP_DSP",
-					"-DWEBRTC_MAC",
-					"-DTGVOIP_USE_CALLBACK_AUDIO_IO",
-					"-DWEBRTC_NS_FLOAT",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.grishka.libtgvoip;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = "Debug Auto Test";
-		};
-		69F8423C1E67540700C110F7 /* DebugHockeyapp */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = DebugHockeyapp;
-		};
-		69F8423D1E67540700C110F7 /* ReleaseHockeyapp */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = ReleaseHockeyapp;
-		};
-		69F8423F1E67540700C110F7 /* DebugHockeyapp */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"../../thrid-party/opus/include/opus",
-					"../../third-party/opus/include/opus",
-					webrtc_dsp,
-					"../Telegram-Mac/third-party/opus/include/opus",
-					"../Telegram-Mac/thrid-party/opus/include/opus",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_CFLAGS = (
-					"-DTGVOIP_USE_CUSTOM_CRYPTO",
-					"-DWEBRTC_POSIX",
-					"-DWEBRTC_APM_DEBUG_DUMP=0",
-					"-DTGVOIP_USE_DESKTOP_DSP",
-					"-DWEBRTC_MAC",
-					"-DWEBRTC_NS_FLOAT",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.grishka.libtgvoip;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = DebugHockeyapp;
-		};
-		69F842401E67540700C110F7 /* ReleaseHockeyapp */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"../../thrid-party/opus/include/opus",
-					"../../third-party/opus/include/opus",
-					webrtc_dsp,
-					"../Telegram-Mac/third-party/opus/include/opus",
-					"../Telegram-Mac/thrid-party/opus/include/opus",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_CFLAGS = (
-					"-DTGVOIP_USE_CUSTOM_CRYPTO",
-					"-DWEBRTC_POSIX",
-					"-DWEBRTC_APM_DEBUG_DUMP=0",
-					"-DTGVOIP_USE_DESKTOP_DSP",
-					"-DWEBRTC_MAC",
-					"-DWEBRTC_NS_FLOAT",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.grishka.libtgvoip;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = ReleaseHockeyapp;
-		};
-		A7F282BB238EA9FB00742C20 /* Github */ = {
+		D04D01C31E678C0D0086DDC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -3612,25 +3135,73 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Github;
+			name = Debug;
 		};
-		A7F282BC238EA9FB00742C20 /* Github */ = {
+		D04D01C41E678C0D0086DDC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					WEBRTC_NS_FLOAT,
+					WEBRTC_POSIX,
+					WEBRTC_HAS_NEON,
+					WEBRTC_MAC,
+					"WebRtcAgc_UpdateAgcThresholds=WebRtcAgc_UpdateAgcThresholds1",
+					"WebRtcAgc_Init=WebRtcAgc_Init1",
+					"rtc_FatalMessage=rtc_FatalMessage1",
+					"WebRtcAgc_Process=WebRtcAgc_Process1",
+					"webrtc=webrtc1",
+					"rtc=rtc1",
+					"WebRtcAgc_ProcessVad=WebRtcAgc_ProcessVad1",
+					"WebRtcAgc_InitVad=WebRtcAgc_InitVad1",
+					"WebRtcAgc_CalculateGainTable=WebRtcAgc_CalculateGainTable1",
+					"WebRtcAgc_AddFarendToDigital=WebRtcAgc_AddFarendToDigital1",
+					"WebRtcAgc_InitDigital=WebRtcAgc_InitDigital1",
+					"WebRtcAgc_AddMic=WebRtcAgc_AddMic1",
+					"WebRtcAgc_VirtualMic=WebRtcAgc_VirtualMic1",
+					"WebRtcAgc_AddFarend=WebRtcAgc_AddFarend1",
+					"WebRtcAgc_Free=WebRtcAgc_Free1",
+					"WebRtcAgc_Create=WebRtcAgc_Create1",
+					"WebRtcAgc_ExpCurve=WebRtcAgc_ExpCurve1",
+					"WebRtcAgc_get_config=WebRtcAgc_get_config1",
+					"WebRtcAgc_set_config=WebRtcAgc_set_config1",
+					"WebRtcAgc_ProcessAnalog=WebRtcAgc_ProcessAnalog1",
+					"WebRtcAgc_SpeakerInactiveCtrl=WebRtcAgc_SpeakerInactiveCtrl1",
+					"WebRtcAgc_SaturationCtrl=WebRtcAgc_SaturationCtrl1",
+					"WebRtcAgc_ZeroCtrl=WebRtcAgc_ZeroCtrl1",
+					"WebRtcAgc_GetAddFarendError=WebRtcAgc_GetAddFarendError1",
+					"TGVOIP_INCLUDE_OPUS_PACKAGE=1",
+					"WebRtcSpl_MaxValueW16C=WebRtcSpl_MaxValueW16C1",
+					"WebRtcSpl_MinValueW16C=WebRtcSpl_MinValueW16C1",
+					"WebRtcSpl_MaxAbsValueW16C=WebRtcSpl_MaxAbsValueW16C1",
+					"WebRtcSpl_MaxValueW32C=WebRtcSpl_MaxValueW32C1",
+					"WebRtcSpl_MaxAbsValueW32C=WebRtcSpl_MaxAbsValueW32C1",
+					"WebRtcSpl_MinValueW32C=WebRtcSpl_MinValueW32C1",
+					"WebRtcSpl_MaxIndexW16=WebRtcSpl_MaxIndexW161",
+					"WebRtcSpl_MaxAbsIndexW16=WebRtcSpl_MaxAbsIndexW161",
+					"WebRtcSpl_MinIndexW16=WebRtcSpl_MinIndexW161",
+					"WebRtcSpl_MaxIndexW32=WebRtcSpl_MaxIndexW321",
+					"WebRtcSpl_MinIndexW32=WebRtcSpl_MinIndexW321",
+					"WebRtcSpl_MaxValueW16Neon=WebRtcSpl_MaxValueW16Neon1",
+					"WebRtcSpl_MaxAbsValueW16Neon=WebRtcSpl_MaxAbsValueW16Neon1",
+					"WebRtcSpl_MinValueW16Neon=WebRtcSpl_MinValueW16Neon1",
+					"WebRtcSpl_MaxValueW32Neon=WebRtcSpl_MaxValueW32Neon1",
+					"WebRtcSpl_MaxAbsValueW32Neon=WebRtcSpl_MaxAbsValueW32Neon1",
+					"WebRtcSpl_MinValueW32Neon=WebRtcSpl_MinValueW32Neon1",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"../../thrid-party/opus/include/opus",
-					"../../third-party/opus/include/opus",
-					webrtc_dsp,
-					"../Telegram-Mac/third-party/opus/include/opus",
-					"../Telegram-Mac/thrid-party/opus/include/opus",
+					"$PROJECT_DIR/../../core-xprojects/libopus/build/libopus/include",
+					"$PROJECT_DIR/../../core-xprojects/openssl/build/openssl/include",
+					webrtc_dsp/,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -3638,9 +3209,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
-					"-DTGVOIP_USE_CUSTOM_CRYPTO",
 					"-DWEBRTC_POSIX",
 					"-DWEBRTC_APM_DEBUG_DUMP=0",
 					"-DTGVOIP_USE_DESKTOP_DSP",
@@ -3652,346 +3223,9 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
-			name = Github;
+			name = Debug;
 		};
-		A7F282BD238EA9FB00742C20 /* Github */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					/usr/local/opt/openssl/include,
-					webrtc_dsp,
-				);
-				INFOPLIST_FILE = tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/opt/openssl/lib,
-					/usr/local/lib,
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = "-DTGVOIP_USE_CALLBACK_AUDIO_IO";
-				OTHER_LDFLAGS = (
-					"-lopus",
-					"-lcrypto",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.grishka.libtgvoipTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Github;
-		};
-		D045B56522E0C29A005B6623 /* HockeyappMacAlpha */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = HockeyappMacAlpha;
-		};
-		D045B56622E0C29A005B6623 /* HockeyappMacAlpha */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"../../thrid-party/opus/include/opus",
-					"../../third-party/opus/include/opus",
-					webrtc_dsp,
-					"../Telegram-Mac/third-party/opus/include/opus",
-					"../Telegram-Mac/thrid-party/opus/include/opus",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_CFLAGS = (
-					"-DTGVOIP_USE_CUSTOM_CRYPTO",
-					"-DWEBRTC_POSIX",
-					"-DWEBRTC_APM_DEBUG_DUMP=0",
-					"-DTGVOIP_USE_DESKTOP_DSP",
-					"-DWEBRTC_MAC",
-					"-DWEBRTC_NS_FLOAT",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.grishka.libtgvoip;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = HockeyappMacAlpha;
-		};
-		D045B56722E0C29A005B6623 /* HockeyappMacAlpha */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					/usr/local/opt/openssl/include,
-					webrtc_dsp,
-				);
-				INFOPLIST_FILE = tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/opt/openssl/lib,
-					/usr/local/lib,
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = "-DTGVOIP_USE_CALLBACK_AUDIO_IO";
-				OTHER_LDFLAGS = (
-					"-lopus",
-					"-lcrypto",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.grishka.libtgvoipTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = HockeyappMacAlpha;
-		};
-		D04D01C31E678C0D0086DDC0 /* DebugAppStore */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-					TGVOIP_NO_OSX_PRIVATE_API,
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = DebugAppStore;
-		};
-		D04D01C41E678C0D0086DDC0 /* DebugAppStore */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"../../thrid-party/opus/include/opus",
-					"../../third-party/opus/include/opus",
-					webrtc_dsp,
-					"../Telegram-Mac/third-party/opus/include/opus",
-					"../Telegram-Mac/thrid-party/opus/include/opus",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_CFLAGS = (
-					"-DTGVOIP_USE_CUSTOM_CRYPTO",
-					"-DWEBRTC_POSIX",
-					"-DWEBRTC_APM_DEBUG_DUMP=0",
-					"-DTGVOIP_USE_DESKTOP_DSP",
-					"-DWEBRTC_MAC",
-					"-DWEBRTC_NS_FLOAT",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.grishka.libtgvoip;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = DebugAppStore;
-		};
-		D04D01CB1E678C230086DDC0 /* ReleaseAppStore */ = {
+		D04D01CB1E678C230086DDC0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -4035,25 +3269,73 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = ReleaseAppStore;
+			name = Release;
 		};
-		D04D01CC1E678C230086DDC0 /* ReleaseAppStore */ = {
+		D04D01CC1E678C230086DDC0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TGVOIP_NO_OSX_PRIVATE_API,
+					DWEBRTC_NS_FLOAT,
+					WEBRTC_POSIX,
+					WEBRTC_HAS_NEON,
+					WEBRTC_MAC,
+					"WebRtcAgc_UpdateAgcThresholds=WebRtcAgc_UpdateAgcThresholds1",
+					"WebRtcAgc_Init=WebRtcAgc_Init1",
+					"rtc_FatalMessage=rtc_FatalMessage1",
+					"WebRtcAgc_Process=WebRtcAgc_Process1",
+					"webrtc=webrtc1",
+					"rtc=rtc1",
+					"WebRtcAgc_ProcessVad=WebRtcAgc_ProcessVad1",
+					"WebRtcAgc_InitVad=WebRtcAgc_InitVad1",
+					"WebRtcAgc_CalculateGainTable=WebRtcAgc_CalculateGainTable1",
+					"WebRtcAgc_AddFarendToDigital=WebRtcAgc_AddFarendToDigital1",
+					"WebRtcAgc_InitDigital=WebRtcAgc_InitDigital1",
+					"WebRtcAgc_AddMic=WebRtcAgc_AddMic1",
+					"WebRtcAgc_VirtualMic=WebRtcAgc_VirtualMic1",
+					"WebRtcAgc_AddFarend=WebRtcAgc_AddFarend1",
+					"WebRtcAgc_Free=WebRtcAgc_Free1",
+					"WebRtcAgc_Create=WebRtcAgc_Create1",
+					"WebRtcAgc_ExpCurve=WebRtcAgc_ExpCurve1",
+					"WebRtcAgc_get_config=WebRtcAgc_get_config1",
+					"WebRtcAgc_set_config=WebRtcAgc_set_config1",
+					"WebRtcAgc_ProcessAnalog=WebRtcAgc_ProcessAnalog1",
+					"WebRtcAgc_SpeakerInactiveCtrl=WebRtcAgc_SpeakerInactiveCtrl1",
+					"WebRtcAgc_SaturationCtrl=WebRtcAgc_SaturationCtrl1",
+					"WebRtcAgc_ZeroCtrl=WebRtcAgc_ZeroCtrl1",
+					"WebRtcAgc_GetAddFarendError=WebRtcAgc_GetAddFarendError1",
+					"TGVOIP_INCLUDE_OPUS_PACKAGE=1",
+					"WebRtcSpl_MaxValueW16C=WebRtcSpl_MaxValueW16C1",
+					"WebRtcSpl_MaxAbsValueW16C=WebRtcSpl_MaxAbsValueW16C1",
+					"WebRtcSpl_MinValueW16C=WebRtcSpl_MinValueW16C1",
+					"WebRtcSpl_MaxValueW32C=WebRtcSpl_MaxValueW32C1",
+					"WebRtcSpl_MaxAbsValueW32C=WebRtcSpl_MaxAbsValueW32C1",
+					"WebRtcSpl_MinValueW32C=WebRtcSpl_MinValueW32C1",
+					"WebRtcSpl_MaxIndexW16=WebRtcSpl_MaxIndexW161",
+					"WebRtcSpl_MaxAbsIndexW16=WebRtcSpl_MaxAbsIndexW161",
+					"WebRtcSpl_MinIndexW16=WebRtcSpl_MinIndexW161",
+					"WebRtcSpl_MaxIndexW32=WebRtcSpl_MaxIndexW321",
+					"WebRtcSpl_MinIndexW32=WebRtcSpl_MinIndexW321",
+					"WebRtcSpl_MaxValueW16Neon=WebRtcSpl_MaxValueW16Neon1",
+					"WebRtcSpl_MaxAbsValueW16Neon=WebRtcSpl_MaxAbsValueW16Neon1",
+					"WebRtcSpl_MinValueW16Neon=WebRtcSpl_MinValueW16Neon1",
+					"WebRtcSpl_MaxValueW32Neon=WebRtcSpl_MaxValueW32Neon1",
+					"WebRtcSpl_MaxAbsValueW32Neon=WebRtcSpl_MaxAbsValueW32Neon1",
+					"WebRtcSpl_MinValueW32Neon=WebRtcSpl_MinValueW32Neon1",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"../../thrid-party/opus/include/opus",
-					"../../third-party/opus/include/opus",
-					webrtc_dsp,
-					"../Telegram-Mac/third-party/opus/include/opus",
-					"../Telegram-Mac/thrid-party/opus/include/opus",
+					"$PROJECT_DIR/../../core-xprojects/libopus/build/libopus/include",
+					"$PROJECT_DIR/../../core-xprojects/openssl/build/openssl/include",
+					webrtc_dsp/,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -4061,9 +3343,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
-					"-DTGVOIP_USE_CUSTOM_CRYPTO",
 					"-DWEBRTC_POSIX",
 					"-DWEBRTC_APM_DEBUG_DUMP=0",
 					"-DTGVOIP_USE_DESKTOP_DSP",
@@ -4075,7 +3357,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
-			name = ReleaseAppStore;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -4083,44 +3365,29 @@
 		697B6FD12136DBA4004C8E54 /* Build configuration list for PBXNativeTarget "libtgvoipTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				697B6FCC2136DBA4004C8E54 /* DebugHockeyapp */,
-				D045B56722E0C29A005B6623 /* HockeyappMacAlpha */,
-				697B6FCD2136DBA4004C8E54 /* Debug Auto Test */,
-				697B6FCE2136DBA4004C8E54 /* DebugAppStore */,
-				A7F282BD238EA9FB00742C20 /* Github */,
-				697B6FCF2136DBA4004C8E54 /* ReleaseHockeyapp */,
-				697B6FD02136DBA4004C8E54 /* ReleaseAppStore */,
+				697B6FCE2136DBA4004C8E54 /* Debug */,
+				697B6FD02136DBA4004C8E54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = ReleaseHockeyapp;
+			defaultConfigurationName = Debug;
 		};
 		69F842301E67540700C110F7 /* Build configuration list for PBXProject "libtgvoip_osx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				69F8423C1E67540700C110F7 /* DebugHockeyapp */,
-				D045B56522E0C29A005B6623 /* HockeyappMacAlpha */,
-				69EBC7982136D55A003CFE90 /* Debug Auto Test */,
-				D04D01C31E678C0D0086DDC0 /* DebugAppStore */,
-				A7F282BB238EA9FB00742C20 /* Github */,
-				69F8423D1E67540700C110F7 /* ReleaseHockeyapp */,
-				D04D01CB1E678C230086DDC0 /* ReleaseAppStore */,
+				D04D01C31E678C0D0086DDC0 /* Debug */,
+				D04D01CB1E678C230086DDC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = ReleaseHockeyapp;
+			defaultConfigurationName = Debug;
 		};
 		69F8423E1E67540700C110F7 /* Build configuration list for PBXNativeTarget "libtgvoip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				69F8423F1E67540700C110F7 /* DebugHockeyapp */,
-				D045B56622E0C29A005B6623 /* HockeyappMacAlpha */,
-				69EBC7992136D55A003CFE90 /* Debug Auto Test */,
-				D04D01C41E678C0D0086DDC0 /* DebugAppStore */,
-				A7F282BC238EA9FB00742C20 /* Github */,
-				69F842401E67540700C110F7 /* ReleaseHockeyapp */,
-				D04D01CC1E678C230086DDC0 /* ReleaseAppStore */,
+				D04D01C41E678C0D0086DDC0 /* Debug */,
+				D04D01CC1E678C230086DDC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = ReleaseHockeyapp;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
