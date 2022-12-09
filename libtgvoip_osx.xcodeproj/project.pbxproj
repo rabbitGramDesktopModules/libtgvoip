@@ -10,283 +10,6 @@
 		690725BE1EBBD5DE005D860B /* NetworkSocketPosix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 690725BC1EBBD5DE005D860B /* NetworkSocketPosix.cpp */; };
 		690725C21EBBD5F2005D860B /* NetworkSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 690725C01EBBD5F2005D860B /* NetworkSocket.cpp */; };
 		6915307B1E6B5BAB004F643F /* logging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6915307A1E6B5BAB004F643F /* logging.cpp */; };
-		691E05C921A4FD7600F838EF /* memutil.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E033321A4FD7500F838EF /* memutil.cc */; };
-		691E05CA21A4FD7600F838EF /* string_view.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E033421A4FD7500F838EF /* string_view.cc */; };
-		691E05CC21A4FD7600F838EF /* ascii.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E033621A4FD7500F838EF /* ascii.cc */; };
-		691E05D021A4FD7600F838EF /* bad_optional_access.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E033B21A4FD7500F838EF /* bad_optional_access.cc */; };
-		691E05D121A4FD7600F838EF /* optional.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E033C21A4FD7500F838EF /* optional.cc */; };
-		691E05D921A4FD7600F838EF /* raw_logging.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E034A21A4FD7500F838EF /* raw_logging.cc */; };
-		691E05DA21A4FD7600F838EF /* throw_delegate.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E034B21A4FD7500F838EF /* throw_delegate.cc */; };
-		691E05E821A4FD7600F838EF /* window_generator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E035C21A4FD7500F838EF /* window_generator.cc */; };
-		691E05E921A4FD7600F838EF /* channel_buffer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E035D21A4FD7500F838EF /* channel_buffer.cc */; };
-		691E05EA21A4FD7600F838EF /* fir_filter_factory.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E035E21A4FD7500F838EF /* fir_filter_factory.cc */; };
-		691E05F121A4FD7600F838EF /* wav_header.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E036621A4FD7500F838EF /* wav_header.cc */; };
-		691E05F221A4FD7600F838EF /* real_fourier_ooura.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E036721A4FD7500F838EF /* real_fourier_ooura.cc */; };
-		691E05F321A4FD7600F838EF /* fir_filter_neon.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E036821A4FD7500F838EF /* fir_filter_neon.cc */; };
-		691E05F421A4FD7600F838EF /* audio_util.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E036921A4FD7500F838EF /* audio_util.cc */; };
-		691E05F621A4FD7600F838EF /* fir_filter_sse.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E036B21A4FD7500F838EF /* fir_filter_sse.cc */; };
-		691E05F821A4FD7600F838EF /* sinc_resampler_neon.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E036E21A4FD7500F838EF /* sinc_resampler_neon.cc */; };
-		691E05F921A4FD7600F838EF /* push_sinc_resampler.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E036F21A4FD7500F838EF /* push_sinc_resampler.cc */; };
-		691E05FB21A4FD7600F838EF /* resampler.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E037121A4FD7500F838EF /* resampler.cc */; };
-		691E05FC21A4FD7600F838EF /* sinc_resampler_sse.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E037221A4FD7500F838EF /* sinc_resampler_sse.cc */; };
-		691E060021A4FD7600F838EF /* push_resampler.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E037721A4FD7500F838EF /* push_resampler.cc */; };
-		691E060221A4FD7600F838EF /* sinc_resampler.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E037921A4FD7500F838EF /* sinc_resampler.cc */; };
-		691E060321A4FD7600F838EF /* sinusoidal_linear_chirp_source.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E037A21A4FD7500F838EF /* sinusoidal_linear_chirp_source.cc */; };
-		691E060621A4FD7600F838EF /* wav_file.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E037D21A4FD7500F838EF /* wav_file.cc */; };
-		691E060721A4FD7600F838EF /* spl_sqrt_floor.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E038021A4FD7500F838EF /* spl_sqrt_floor.c */; };
-		691E060A21A4FD7600F838EF /* fft4g.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E038421A4FD7500F838EF /* fft4g.c */; };
-		691E060C21A4FD7600F838EF /* audio_converter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E038621A4FD7500F838EF /* audio_converter.cc */; };
-		691E060D21A4FD7600F838EF /* real_fourier.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E038721A4FD7500F838EF /* real_fourier.cc */; };
-		691E061021A4FD7600F838EF /* sparse_fir_filter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E038A21A4FD7500F838EF /* sparse_fir_filter.cc */; };
-		691E061221A4FD7600F838EF /* smoothing_filter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E038C21A4FD7500F838EF /* smoothing_filter.cc */; };
-		691E061321A4FD7600F838EF /* fir_filter_c.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E038D21A4FD7500F838EF /* fir_filter_c.cc */; };
-		691E061421A4FD7600F838EF /* ring_buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E038E21A4FD7500F838EF /* ring_buffer.c */; };
-		691E061721A4FD7600F838EF /* complex_fft.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E039221A4FD7500F838EF /* complex_fft.c */; };
-		691E061821A4FD7600F838EF /* filter_ma_fast_q12.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E039321A4FD7500F838EF /* filter_ma_fast_q12.c */; };
-		691E061921A4FD7600F838EF /* splitting_filter1.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E039421A4FD7500F838EF /* splitting_filter1.c */; };
-		691E061A21A4FD7600F838EF /* levinson_durbin.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E039521A4FD7500F838EF /* levinson_durbin.c */; };
-		691E061B21A4FD7600F838EF /* downsample_fast_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E039621A4FD7500F838EF /* downsample_fast_neon.c */; };
-		691E061C21A4FD7600F838EF /* dot_product_with_scale.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E039721A4FD7500F838EF /* dot_product_with_scale.cc */; };
-		691E061D21A4FD7600F838EF /* auto_corr_to_refl_coef.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E039821A4FD7500F838EF /* auto_corr_to_refl_coef.c */; };
-		691E061E21A4FD7600F838EF /* resample_by_2_internal.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E039921A4FD7500F838EF /* resample_by_2_internal.c */; };
-		691E062021A4FD7600F838EF /* energy.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E039B21A4FD7500F838EF /* energy.c */; };
-		691E062121A4FD7600F838EF /* sqrt_of_one_minus_x_squared.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E039C21A4FD7500F838EF /* sqrt_of_one_minus_x_squared.c */; };
-		691E062221A4FD7600F838EF /* downsample_fast.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E039D21A4FD7500F838EF /* downsample_fast.c */; };
-		691E062321A4FD7600F838EF /* filter_ar_fast_q12.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E039E21A4FD7500F838EF /* filter_ar_fast_q12.c */; };
-		691E062421A4FD7600F838EF /* spl_init.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E039F21A4FD7500F838EF /* spl_init.c */; };
-		691E062521A4FD7600F838EF /* lpc_to_refl_coef.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03A021A4FD7500F838EF /* lpc_to_refl_coef.c */; };
-		691E062621A4FD7600F838EF /* cross_correlation.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03A121A4FD7500F838EF /* cross_correlation.c */; };
-		691E062B21A4FD7600F838EF /* division_operations.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03A721A4FD7500F838EF /* division_operations.c */; };
-		691E062C21A4FD7600F838EF /* auto_correlation.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03A821A4FD7500F838EF /* auto_correlation.c */; };
-		691E062D21A4FD7600F838EF /* get_scaling_square.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03A921A4FD7500F838EF /* get_scaling_square.c */; };
-		691E062E21A4FD7600F838EF /* min_max_operations_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03AA21A4FD7500F838EF /* min_max_operations_neon.c */; };
-		691E063121A4FD7600F838EF /* resample.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03AD21A4FD7500F838EF /* resample.c */; };
-		691E063221A4FD7600F838EF /* cross_correlation_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03AE21A4FD7500F838EF /* cross_correlation_neon.c */; };
-		691E063321A4FD7600F838EF /* min_max_operations.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03AF21A4FD7500F838EF /* min_max_operations.c */; };
-		691E063421A4FD7600F838EF /* refl_coef_to_lpc.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03B021A4FD7500F838EF /* refl_coef_to_lpc.c */; };
-		691E063521A4FD7600F838EF /* filter_ar.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03B121A4FD7500F838EF /* filter_ar.c */; };
-		691E063621A4FD7600F838EF /* vector_scaling_operations.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03B221A4FD7500F838EF /* vector_scaling_operations.c */; };
-		691E063721A4FD7600F838EF /* resample_fractional.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03B321A4FD7500F838EF /* resample_fractional.c */; };
-		691E063821A4FD7600F838EF /* real_fft.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03B421A4FD7500F838EF /* real_fft.c */; };
-		691E063921A4FD7600F838EF /* ilbc_specific_functions.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03B521A4FD7500F838EF /* ilbc_specific_functions.c */; };
-		691E063A21A4FD7600F838EF /* complex_bit_reverse.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03B621A4FD7500F838EF /* complex_bit_reverse.c */; };
-		691E063B21A4FD7600F838EF /* randomization_functions.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03B721A4FD7500F838EF /* randomization_functions.c */; };
-		691E063D21A4FD7600F838EF /* copy_set_operations.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03B921A4FD7500F838EF /* copy_set_operations.c */; };
-		691E063E21A4FD7600F838EF /* resample_by_2.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03BA21A4FD7500F838EF /* resample_by_2.c */; };
-		691E063F21A4FD7600F838EF /* get_hanning_window.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03BB21A4FD7500F838EF /* get_hanning_window.c */; };
-		691E064021A4FD7600F838EF /* resample_48khz.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03BC21A4FD7500F838EF /* resample_48khz.c */; };
-		691E064121A4FD7600F838EF /* spl_inl.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03BD21A4FD7500F838EF /* spl_inl.c */; };
-		691E064221A4FD7600F838EF /* spl_sqrt.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03BE21A4FD7500F838EF /* spl_sqrt.c */; };
-		691E064421A4FD7600F838EF /* vad_sp.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03C121A4FD7500F838EF /* vad_sp.c */; };
-		691E064521A4FD7600F838EF /* vad.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E03C221A4FD7500F838EF /* vad.cc */; };
-		691E064621A4FD7600F838EF /* webrtc_vad.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03C321A4FD7500F838EF /* webrtc_vad.c */; };
-		691E064B21A4FD7600F838EF /* vad_filterbank.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03C921A4FD7500F838EF /* vad_filterbank.c */; };
-		691E064C21A4FD7600F838EF /* vad_core.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03CA21A4FD7500F838EF /* vad_core.c */; };
-		691E064F21A4FD7600F838EF /* vad_gmm.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03CD21A4FD7500F838EF /* vad_gmm.c */; };
-		691E065021A4FD7600F838EF /* audio_frame.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E03D021A4FD7500F838EF /* audio_frame.cc */; };
-		691E065421A4FD7600F838EF /* echo_canceller3_config.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E03D421A4FD7500F838EF /* echo_canceller3_config.cc */; };
-		691E065621A4FD7600F838EF /* echo_canceller3_factory.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E03D621A4FD7500F838EF /* echo_canceller3_factory.cc */; };
-		691E065821A4FD7600F838EF /* rnn_vad_weights.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E03DB21A4FD7500F838EF /* rnn_vad_weights.cc */; };
-		691E065B21A4FD7600F838EF /* kiss_fft.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E03DE21A4FD7500F838EF /* kiss_fft.cc */; };
-		691E066221A4FD7600F838EF /* field_trial.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E03E821A4FD7500F838EF /* field_trial.cc */; };
-		691E066321A4FD7600F838EF /* metrics.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E03E921A4FD7500F838EF /* metrics.cc */; };
-		691E066421A4FD7600F838EF /* cpu_features.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E03EA21A4FD7500F838EF /* cpu_features.cc */; };
-		691E066621A4FD7600F838EF /* fft.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03EF21A4FD7500F838EF /* fft.c */; };
-		691E066921A4FD7600F838EF /* pitch_estimator.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03F821A4FD7500F838EF /* pitch_estimator.c */; };
-		691E066A21A4FD7600F838EF /* lpc_shape_swb16_tables.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03F921A4FD7500F838EF /* lpc_shape_swb16_tables.c */; };
-		691E066B21A4FD7600F838EF /* pitch_gain_tables.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03FA21A4FD7500F838EF /* pitch_gain_tables.c */; };
-		691E066C21A4FD7600F838EF /* arith_routines_logist.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03FB21A4FD7500F838EF /* arith_routines_logist.c */; };
-		691E066E21A4FD7600F838EF /* filterbanks.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E03FD21A4FD7500F838EF /* filterbanks.c */; };
-		691E067221A4FD7600F838EF /* transform.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E040121A4FD7500F838EF /* transform.c */; };
-		691E067621A4FD7600F838EF /* pitch_filter.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E040521A4FD7500F838EF /* pitch_filter.c */; };
-		691E067721A4FD7600F838EF /* encode_lpc_swb.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E040621A4FD7500F838EF /* encode_lpc_swb.c */; };
-		691E067821A4FD7600F838EF /* filter_functions.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E040721A4FD7500F838EF /* filter_functions.c */; };
-		691E067921A4FD7600F838EF /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E040821A4FD7500F838EF /* decode.c */; };
-		691E067A21A4FD7600F838EF /* lattice.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E040921A4FD7500F838EF /* lattice.c */; };
-		691E067B21A4FD7600F838EF /* intialize.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E040A21A4FD7500F838EF /* intialize.c */; };
-		691E067C21A4FD7600F838EF /* lpc_tables.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E040B21A4FD7500F838EF /* lpc_tables.c */; };
-		691E067D21A4FD7600F838EF /* lpc_gain_swb_tables.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E040C21A4FD7500F838EF /* lpc_gain_swb_tables.c */; };
-		691E067E21A4FD7600F838EF /* bandwidth_estimator.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E040D21A4FD7500F838EF /* bandwidth_estimator.c */; };
-		691E068121A4FD7600F838EF /* encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E041021A4FD7500F838EF /* encode.c */; };
-		691E068221A4FD7600F838EF /* lpc_analysis.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E041121A4FD7500F838EF /* lpc_analysis.c */; };
-		691E068421A4FD7600F838EF /* arith_routines_hist.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E041321A4FD7500F838EF /* arith_routines_hist.c */; };
-		691E068921A4FD7600F838EF /* entropy_coding.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E041821A4FD7500F838EF /* entropy_coding.c */; };
-		691E068A21A4FD7600F838EF /* isac_vad.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E041921A4FD7500F838EF /* isac_vad.c */; };
-		691E068F21A4FD7600F838EF /* arith_routines.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E041E21A4FD7500F838EF /* arith_routines.c */; };
-		691E069021A4FD7600F838EF /* crc.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E041F21A4FD7500F838EF /* crc.c */; };
-		691E069121A4FD7600F838EF /* lpc_shape_swb12_tables.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E042021A4FD7500F838EF /* lpc_shape_swb12_tables.c */; };
-		691E069321A4FD7600F838EF /* decode_bwe.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E042221A4FD7500F838EF /* decode_bwe.c */; };
-		691E069421A4FD7600F838EF /* spectrum_ar_model_tables.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E042321A4FD7500F838EF /* spectrum_ar_model_tables.c */; };
-		691E069621A4FD7600F838EF /* pitch_lag_tables.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E042521A4FD7500F838EF /* pitch_lag_tables.c */; };
-		691E069721A4FD7600F838EF /* isac.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E042621A4FD7500F838EF /* isac.c */; };
-		691E069A21A4FD7600F838EF /* rms_level.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E042A21A4FD7500F838EF /* rms_level.cc */; };
-		691E069E21A4FD7600F838EF /* normalized_covariance_estimator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E042F21A4FD7600F838EF /* normalized_covariance_estimator.cc */; };
-		691E069F21A4FD7600F838EF /* moving_max.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E043021A4FD7600F838EF /* moving_max.cc */; };
-		691E06A021A4FD7600F838EF /* circular_buffer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E043121A4FD7600F838EF /* circular_buffer.cc */; };
-		691E06A121A4FD7600F838EF /* mean_variance_estimator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E043221A4FD7600F838EF /* mean_variance_estimator.cc */; };
-		691E06A421A4FD7600F838EF /* splitting_filter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E043521A4FD7600F838EF /* splitting_filter.cc */; };
-		691E06A521A4FD7600F838EF /* gain_control_impl.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E043621A4FD7600F838EF /* gain_control_impl.cc */; };
-		691E06A821A4FD7600F838EF /* nsx_core.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E043E21A4FD7600F838EF /* nsx_core.c */; };
-		691E06A921A4FD7600F838EF /* noise_suppression_x.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E043F21A4FD7600F838EF /* noise_suppression_x.c */; };
-		691E06AA21A4FD7600F838EF /* nsx_core_c.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E044021A4FD7600F838EF /* nsx_core_c.c */; };
-		691E06AD21A4FD7600F838EF /* ns_core.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E044321A4FD7600F838EF /* ns_core.c */; };
-		691E06B121A4FD7600F838EF /* nsx_core_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E044721A4FD7600F838EF /* nsx_core_neon.c */; };
-		691E06B221A4FD7600F838EF /* noise_suppression.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E044821A4FD7600F838EF /* noise_suppression.c */; };
-		691E06B621A4FD7600F838EF /* audio_buffer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E044C21A4FD7600F838EF /* audio_buffer.cc */; };
-		691E06B721A4FD7600F838EF /* typing_detection.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E044D21A4FD7600F838EF /* typing_detection.cc */; };
-		691E06BF21A4FD7600F838EF /* audio_processing_statistics.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E045721A4FD7600F838EF /* audio_processing_statistics.cc */; };
-		691E06C021A4FD7600F838EF /* audio_generator_factory.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E045821A4FD7600F838EF /* audio_generator_factory.cc */; };
-		691E06C121A4FD7600F838EF /* aec_dump.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E045921A4FD7600F838EF /* aec_dump.cc */; };
-		691E06C521A4FD7600F838EF /* audio_processing.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E045D21A4FD7600F838EF /* audio_processing.cc */; };
-		691E06C621A4FD7600F838EF /* config.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E045E21A4FD7600F838EF /* config.cc */; };
-		691E06C921A4FD7600F838EF /* interpolated_gain_curve.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E046221A4FD7600F838EF /* interpolated_gain_curve.cc */; };
-		691E06CA21A4FD7600F838EF /* agc2_common.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E046321A4FD7600F838EF /* agc2_common.cc */; };
-		691E06CD21A4FD7600F838EF /* gain_applier.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E046621A4FD7600F838EF /* gain_applier.cc */; };
-		691E06CF21A4FD7600F838EF /* adaptive_agc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E046821A4FD7600F838EF /* adaptive_agc.cc */; };
-		691E06D021A4FD7600F838EF /* adaptive_digital_gain_applier.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E046921A4FD7600F838EF /* adaptive_digital_gain_applier.cc */; };
-		691E06D121A4FD7600F838EF /* limiter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E046A21A4FD7600F838EF /* limiter.cc */; };
-		691E06D221A4FD7600F838EF /* saturation_protector.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E046B21A4FD7600F838EF /* saturation_protector.cc */; };
-		691E06D421A4FD7600F838EF /* spectral_features_internal.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E046E21A4FD7600F838EF /* spectral_features_internal.cc */; };
-		691E06D721A4FD7600F838EF /* rnn.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E047121A4FD7600F838EF /* rnn.cc */; };
-		691E06DC21A4FD7600F838EF /* pitch_search_internal.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E047621A4FD7600F838EF /* pitch_search_internal.cc */; };
-		691E06E321A4FD7600F838EF /* spectral_features.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E047D21A4FD7600F838EF /* spectral_features.cc */; };
-		691E06E521A4FD7600F838EF /* pitch_search.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E047F21A4FD7600F838EF /* pitch_search.cc */; };
-		691E06E721A4FD7600F838EF /* features_extraction.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E048121A4FD7600F838EF /* features_extraction.cc */; };
-		691E06E821A4FD7600F838EF /* fft_util.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E048221A4FD7600F838EF /* fft_util.cc */; };
-		691E06E921A4FD7600F838EF /* lp_residual.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E048321A4FD7600F838EF /* lp_residual.cc */; };
-		691E06EB21A4FD7600F838EF /* adaptive_mode_level_estimator_agc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E048521A4FD7600F838EF /* adaptive_mode_level_estimator_agc.cc */; };
-		691E06EC21A4FD7600F838EF /* vector_float_frame.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E048621A4FD7600F838EF /* vector_float_frame.cc */; };
-		691E06EE21A4FD7600F838EF /* noise_level_estimator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E048821A4FD7600F838EF /* noise_level_estimator.cc */; };
-		691E06EF21A4FD7600F838EF /* agc2_testing_common.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E048921A4FD7600F838EF /* agc2_testing_common.cc */; };
-		691E06F021A4FD7600F838EF /* fixed_digital_level_estimator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E048A21A4FD7600F838EF /* fixed_digital_level_estimator.cc */; };
-		691E06F121A4FD7600F838EF /* fixed_gain_controller.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E048B21A4FD7600F838EF /* fixed_gain_controller.cc */; };
-		691E06F321A4FD7600F838EF /* vad_with_level.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E048D21A4FD7600F838EF /* vad_with_level.cc */; };
-		691E06F421A4FD7600F838EF /* limiter_db_gain_curve.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E048E21A4FD7600F838EF /* limiter_db_gain_curve.cc */; };
-		691E06FD21A4FD7600F838EF /* down_sampler.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E049721A4FD7600F838EF /* down_sampler.cc */; };
-		691E06FF21A4FD7600F838EF /* signal_classifier.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E049921A4FD7600F838EF /* signal_classifier.cc */; };
-		691E070021A4FD7600F838EF /* noise_spectrum_estimator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E049A21A4FD7600F838EF /* noise_spectrum_estimator.cc */; };
-		691E070121A4FD7600F838EF /* compute_interpolated_gain_curve.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E049B21A4FD7600F838EF /* compute_interpolated_gain_curve.cc */; };
-		691E070321A4FD7600F838EF /* biquad_filter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E049D21A4FD7600F838EF /* biquad_filter.cc */; };
-		691E070621A4FD7700F838EF /* adaptive_mode_level_estimator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04A021A4FD7600F838EF /* adaptive_mode_level_estimator.cc */; };
-		691E070721A4FD7700F838EF /* moving_moments.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04A221A4FD7600F838EF /* moving_moments.cc */; };
-		691E070921A4FD7700F838EF /* wpd_tree.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04A421A4FD7600F838EF /* wpd_tree.cc */; };
-		691E071021A4FD7700F838EF /* wpd_node.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04AB21A4FD7600F838EF /* wpd_node.cc */; };
-		691E071121A4FD7700F838EF /* transient_suppressor.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04AC21A4FD7600F838EF /* transient_suppressor.cc */; };
-		691E071221A4FD7700F838EF /* transient_detector.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04AD21A4FD7600F838EF /* transient_detector.cc */; };
-		691E071421A4FD7700F838EF /* low_cut_filter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04AF21A4FD7600F838EF /* low_cut_filter.cc */; };
-		691E071621A4FD7700F838EF /* level_estimator_impl.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04B121A4FD7600F838EF /* level_estimator_impl.cc */; };
-		691E071721A4FD7700F838EF /* three_band_filter_bank.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04B221A4FD7600F838EF /* three_band_filter_bank.cc */; };
-		691E071821A4FD7700F838EF /* echo_cancellation.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04B421A4FD7600F838EF /* echo_cancellation.cc */; };
-		691E071A21A4FD7700F838EF /* aec_resampler.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04B621A4FD7600F838EF /* aec_resampler.cc */; };
-		691E071C21A4FD7700F838EF /* aec_core.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04B821A4FD7600F838EF /* aec_core.cc */; };
-		691E071F21A4FD7700F838EF /* aec_core_neon.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04BB21A4FD7600F838EF /* aec_core_neon.cc */; };
-		691E072021A4FD7700F838EF /* aec_core_sse2.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04BC21A4FD7600F838EF /* aec_core_sse2.cc */; };
-		691E072321A4FD7700F838EF /* voice_detection_impl.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04BF21A4FD7600F838EF /* voice_detection_impl.cc */; };
-		691E072421A4FD7700F838EF /* echo_cancellation_impl.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04C021A4FD7600F838EF /* echo_cancellation_impl.cc */; };
-		691E072521A4FD7700F838EF /* gain_control_for_experimental_agc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04C121A4FD7600F838EF /* gain_control_for_experimental_agc.cc */; };
-		691E072621A4FD7700F838EF /* agc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04C321A4FD7600F838EF /* agc.cc */; };
-		691E072721A4FD7700F838EF /* loudness_histogram.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04C421A4FD7600F838EF /* loudness_histogram.cc */; };
-		691E072821A4FD7700F838EF /* agc_manager_direct.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04C521A4FD7600F838EF /* agc_manager_direct.cc */; };
-		691E072C21A4FD7700F838EF /* analog_agc.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E04CA21A4FD7600F838EF /* analog_agc.c */; };
-		691E072D21A4FD7700F838EF /* digital_agc.c in Sources */ = {isa = PBXBuildFile; fileRef = 691E04CB21A4FD7600F838EF /* digital_agc.c */; };
-		691E072E21A4FD7700F838EF /* utility.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04CC21A4FD7600F838EF /* utility.cc */; };
-		691E073621A4FD7700F838EF /* audio_processing_impl.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04D421A4FD7600F838EF /* audio_processing_impl.cc */; };
-		691E073C21A4FD7700F838EF /* file_audio_generator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04DB21A4FD7600F838EF /* file_audio_generator.cc */; };
-		691E073D21A4FD7700F838EF /* gain_controller2.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04DC21A4FD7600F838EF /* gain_controller2.cc */; };
-		691E073F21A4FD7700F838EF /* residual_echo_detector.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04DE21A4FD7600F838EF /* residual_echo_detector.cc */; };
-		691E074121A4FD7700F838EF /* noise_suppression_impl.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04E021A4FD7600F838EF /* noise_suppression_impl.cc */; };
-		691E074621A4FD7700F838EF /* aecm_core.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04E621A4FD7600F838EF /* aecm_core.cc */; };
-		691E074721A4FD7700F838EF /* aecm_core_c.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04E721A4FD7600F838EF /* aecm_core_c.cc */; };
-		691E074821A4FD7700F838EF /* aecm_core_neon.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04E821A4FD7600F838EF /* aecm_core_neon.cc */; };
-		691E074A21A4FD7700F838EF /* echo_control_mobile.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04EA21A4FD7600F838EF /* echo_control_mobile.cc */; };
-		691E074B21A4FD7700F838EF /* render_reverb_model.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04EC21A4FD7600F838EF /* render_reverb_model.cc */; };
-		691E074E21A4FD7700F838EF /* reverb_model_fallback.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04EF21A4FD7600F838EF /* reverb_model_fallback.cc */; };
-		691E075121A4FD7700F838EF /* echo_remover_metrics.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04F221A4FD7600F838EF /* echo_remover_metrics.cc */; };
-		691E075221A4FD7700F838EF /* matched_filter_lag_aggregator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04F321A4FD7600F838EF /* matched_filter_lag_aggregator.cc */; };
-		691E075321A4FD7700F838EF /* render_delay_buffer2.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04F421A4FD7600F838EF /* render_delay_buffer2.cc */; };
-		691E075621A4FD7700F838EF /* echo_path_variability.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04F721A4FD7600F838EF /* echo_path_variability.cc */; };
-		691E075721A4FD7700F838EF /* frame_blocker.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04F821A4FD7600F838EF /* frame_blocker.cc */; };
-		691E075821A4FD7700F838EF /* subtractor.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E04F921A4FD7600F838EF /* subtractor.cc */; };
-		691E075F21A4FD7700F838EF /* aec3_fft.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E050021A4FD7600F838EF /* aec3_fft.cc */; };
-		691E076221A4FD7700F838EF /* fullband_erle_estimator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E050321A4FD7600F838EF /* fullband_erle_estimator.cc */; };
-		691E076321A4FD7700F838EF /* suppression_filter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E050421A4FD7600F838EF /* suppression_filter.cc */; };
-		691E076421A4FD7700F838EF /* block_processor.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E050521A4FD7600F838EF /* block_processor.cc */; };
-		691E076821A4FD7700F838EF /* subband_erle_estimator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E050921A4FD7600F838EF /* subband_erle_estimator.cc */; };
-		691E076921A4FD7700F838EF /* render_delay_controller_metrics.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E050A21A4FD7600F838EF /* render_delay_controller_metrics.cc */; };
-		691E076A21A4FD7700F838EF /* render_delay_buffer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E050B21A4FD7600F838EF /* render_delay_buffer.cc */; };
-		691E076C21A4FD7700F838EF /* vector_buffer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E050D21A4FD7600F838EF /* vector_buffer.cc */; };
-		691E076D21A4FD7700F838EF /* erl_estimator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E050E21A4FD7600F838EF /* erl_estimator.cc */; };
-		691E076E21A4FD7700F838EF /* aec_state.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E050F21A4FD7600F838EF /* aec_state.cc */; };
-		691E076F21A4FD7700F838EF /* adaptive_fir_filter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E051021A4FD7600F838EF /* adaptive_fir_filter.cc */; };
-		691E077121A4FD7700F838EF /* render_delay_controller.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E051221A4FD7600F838EF /* render_delay_controller.cc */; };
-		691E077221A4FD7700F838EF /* skew_estimator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E051321A4FD7600F838EF /* skew_estimator.cc */; };
-		691E077521A4FD7700F838EF /* echo_path_delay_estimator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E051621A4FD7600F838EF /* echo_path_delay_estimator.cc */; };
-		691E077821A4FD7700F838EF /* block_framer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E051921A4FD7600F838EF /* block_framer.cc */; };
-		691E077921A4FD7700F838EF /* erle_estimator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E051A21A4FD7600F838EF /* erle_estimator.cc */; };
-		691E077A21A4FD7700F838EF /* reverb_model.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E051B21A4FD7600F838EF /* reverb_model.cc */; };
-		691E077B21A4FD7700F838EF /* cascaded_biquad_filter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E051C21A4FD7600F838EF /* cascaded_biquad_filter.cc */; };
-		691E077D21A4FD7700F838EF /* render_buffer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E051E21A4FD7600F838EF /* render_buffer.cc */; };
-		691E077F21A4FD7700F838EF /* subtractor_output.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E052021A4FD7600F838EF /* subtractor_output.cc */; };
-		691E078021A4FD7700F838EF /* stationarity_estimator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E052121A4FD7600F838EF /* stationarity_estimator.cc */; };
-		691E078121A4FD7700F838EF /* render_signal_analyzer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E052221A4FD7600F838EF /* render_signal_analyzer.cc */; };
-		691E078521A4FD7700F838EF /* subtractor_output_analyzer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E052621A4FD7600F838EF /* subtractor_output_analyzer.cc */; };
-		691E078621A4FD7700F838EF /* suppression_gain.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E052721A4FD7600F838EF /* suppression_gain.cc */; };
-		691E078721A4FD7700F838EF /* echo_audibility.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E052821A4FD7600F838EF /* echo_audibility.cc */; };
-		691E078821A4FD7700F838EF /* block_processor_metrics.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E052921A4FD7600F838EF /* block_processor_metrics.cc */; };
-		691E078B21A4FD7700F838EF /* moving_average.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E052C21A4FD7600F838EF /* moving_average.cc */; };
-		691E078E21A4FD7700F838EF /* reverb_model_estimator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E052F21A4FD7600F838EF /* reverb_model_estimator.cc */; };
-		691E078F21A4FD7700F838EF /* aec3_common.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E053021A4FD7600F838EF /* aec3_common.cc */; };
-		691E079021A4FD7700F838EF /* residual_echo_estimator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E053121A4FD7600F838EF /* residual_echo_estimator.cc */; };
-		691E079321A4FD7700F838EF /* matched_filter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E053421A4FD7600F838EF /* matched_filter.cc */; };
-		691E079721A4FD7700F838EF /* reverb_decay_estimator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E053821A4FD7600F838EF /* reverb_decay_estimator.cc */; };
-		691E079821A4FD7700F838EF /* render_delay_controller2.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E053921A4FD7600F838EF /* render_delay_controller2.cc */; };
-		691E079A21A4FD7700F838EF /* suppression_gain_limiter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E053B21A4FD7600F838EF /* suppression_gain_limiter.cc */; };
-		691E079B21A4FD7700F838EF /* main_filter_update_gain.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E053C21A4FD7600F838EF /* main_filter_update_gain.cc */; };
-		691E079C21A4FD7700F838EF /* echo_remover.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E053D21A4FD7600F838EF /* echo_remover.cc */; };
-		691E079E21A4FD7700F838EF /* downsampled_render_buffer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E053F21A4FD7600F838EF /* downsampled_render_buffer.cc */; };
-		691E07A021A4FD7700F838EF /* matrix_buffer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E054121A4FD7600F838EF /* matrix_buffer.cc */; };
-		691E07A421A4FD7700F838EF /* block_processor2.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E054521A4FD7600F838EF /* block_processor2.cc */; };
-		691E07A521A4FD7700F838EF /* echo_canceller3.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E054621A4FD7600F838EF /* echo_canceller3.cc */; };
-		691E07A621A4FD7700F838EF /* block_delay_buffer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E054721A4FD7600F838EF /* block_delay_buffer.cc */; };
-		691E07A821A4FD7700F838EF /* fft_buffer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E054921A4FD7600F838EF /* fft_buffer.cc */; };
-		691E07AF21A4FD7700F838EF /* comfort_noise_generator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E055021A4FD7600F838EF /* comfort_noise_generator.cc */; };
-		691E07B321A4FD7700F838EF /* shadow_filter_update_gain.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E055421A4FD7600F838EF /* shadow_filter_update_gain.cc */; };
-		691E07B421A4FD7700F838EF /* filter_analyzer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E055521A4FD7600F838EF /* filter_analyzer.cc */; };
-		691E07B621A4FD7700F838EF /* reverb_frequency_response.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E055721A4FD7600F838EF /* reverb_frequency_response.cc */; };
-		691E07B721A4FD7700F838EF /* decimator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E055821A4FD7600F838EF /* decimator.cc */; };
-		691E07B921A4FD7700F838EF /* echo_control_mobile_impl.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E055A21A4FD7600F838EF /* echo_control_mobile_impl.cc */; };
-		691E07BC21A4FD7700F838EF /* apm_data_dumper.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E055E21A4FD7600F838EF /* apm_data_dumper.cc */; };
-		691E07BE21A4FD7700F838EF /* voice_activity_detector.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E056121A4FD7600F838EF /* voice_activity_detector.cc */; };
-		691E07BF21A4FD7700F838EF /* standalone_vad.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E056221A4FD7600F838EF /* standalone_vad.cc */; };
-		691E07C121A4FD7700F838EF /* pitch_internal.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E056421A4FD7600F838EF /* pitch_internal.cc */; };
-		691E07C221A4FD7700F838EF /* vad_circular_buffer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E056521A4FD7600F838EF /* vad_circular_buffer.cc */; };
-		691E07C521A4FD7700F838EF /* vad_audio_proc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E056821A4FD7600F838EF /* vad_audio_proc.cc */; };
-		691E07C621A4FD7700F838EF /* pole_zero_filter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E056921A4FD7600F838EF /* pole_zero_filter.cc */; };
-		691E07C821A4FD7700F838EF /* pitch_based_vad.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E056B21A4FD7600F838EF /* pitch_based_vad.cc */; };
-		691E07CF21A4FD7700F838EF /* gmm.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E057221A4FD7600F838EF /* gmm.cc */; };
-		691E07D421A4FD7700F838EF /* ooura_fft.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E057821A4FD7600F838EF /* ooura_fft.cc */; };
-		691E07D621A4FD7700F838EF /* delay_estimator_wrapper.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E057A21A4FD7600F838EF /* delay_estimator_wrapper.cc */; };
-		691E07D721A4FD7700F838EF /* ooura_fft_sse2.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E057B21A4FD7600F838EF /* ooura_fft_sse2.cc */; };
-		691E07D821A4FD7700F838EF /* delay_estimator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E057C21A4FD7600F838EF /* delay_estimator.cc */; };
-		691E07DA21A4FD7700F838EF /* ooura_fft_neon.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E057E21A4FD7600F838EF /* ooura_fft_neon.cc */; };
-		691E07DB21A4FD7700F838EF /* block_mean_calculator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E057F21A4FD7600F838EF /* block_mean_calculator.cc */; };
-		691E07E121A4FD7700F838EF /* race_checker.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E058621A4FD7600F838EF /* race_checker.cc */; };
-		691E07E321A4FD7700F838EF /* string_builder.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E058921A4FD7600F838EF /* string_builder.cc */; };
-		691E07E621A4FD7700F838EF /* aligned_malloc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E058D21A4FD7600F838EF /* aligned_malloc.cc */; };
-		691E07E821A4FD7700F838EF /* timeutils.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E058F21A4FD7600F838EF /* timeutils.cc */; };
-		691E07EA21A4FD7700F838EF /* logging_mac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 691E059121A4FD7600F838EF /* logging_mac.mm */; };
-		691E07EE21A4FD7700F838EF /* platform_file.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E059521A4FD7600F838EF /* platform_file.cc */; };
-		691E07F021A4FD7700F838EF /* string_to_number.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E059721A4FD7600F838EF /* string_to_number.cc */; };
-		691E07F421A4FD7700F838EF /* thread_checker_impl.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E059B21A4FD7600F838EF /* thread_checker_impl.cc */; };
-		691E07FA21A4FD7700F838EF /* stringencode.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E05A121A4FD7600F838EF /* stringencode.cc */; };
-		691E07FB21A4FD7700F838EF /* stringutils.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E05A221A4FD7600F838EF /* stringutils.cc */; };
-		691E07FC21A4FD7700F838EF /* checks.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E05A321A4FD7600F838EF /* checks.cc */; };
-		691E080721A4FD7700F838EF /* platform_thread.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E05B021A4FD7600F838EF /* platform_thread.cc */; };
-		691E080921A4FD7700F838EF /* logging_webrtc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E05B221A4FD7600F838EF /* logging_webrtc.cc */; };
-		691E081021A4FD7700F838EF /* criticalsection.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E05B921A4FD7600F838EF /* criticalsection.cc */; };
-		691E081121A4FD7700F838EF /* platform_thread_types.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E05BA21A4FD7600F838EF /* platform_thread_types.cc */; };
-		691E081321A4FD7700F838EF /* event.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E05BC21A4FD7600F838EF /* event.cc */; };
-		691E081521A4FD7700F838EF /* event_tracer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 691E05BE21A4FD7600F838EF /* event_tracer.cc */; };
 		692AB8CB1E6759DD00706ACC /* AudioInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 692AB8881E6759DD00706ACC /* AudioInput.cpp */; };
 		692AB8CD1E6759DD00706ACC /* AudioOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 692AB88A1E6759DD00706ACC /* AudioOutput.cpp */; };
 		692AB8CF1E6759DD00706ACC /* BlockingQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 692AB88C1E6759DD00706ACC /* BlockingQueue.cpp */; };
@@ -2611,319 +2334,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				691E075321A4FD7700F838EF /* render_delay_buffer2.cc in Sources */,
-				691E067721A4FD7600F838EF /* encode_lpc_swb.c in Sources */,
-				691E05F921A4FD7600F838EF /* push_sinc_resampler.cc in Sources */,
-				691E079021A4FD7700F838EF /* residual_echo_estimator.cc in Sources */,
-				691E072421A4FD7700F838EF /* echo_cancellation_impl.cc in Sources */,
-				691E071621A4FD7700F838EF /* level_estimator_impl.cc in Sources */,
-				691E079E21A4FD7700F838EF /* downsampled_render_buffer.cc in Sources */,
-				691E06D021A4FD7600F838EF /* adaptive_digital_gain_applier.cc in Sources */,
-				691E07E121A4FD7700F838EF /* race_checker.cc in Sources */,
-				691E062D21A4FD7600F838EF /* get_scaling_square.c in Sources */,
-				691E080721A4FD7700F838EF /* platform_thread.cc in Sources */,
-				691E078021A4FD7700F838EF /* stationarity_estimator.cc in Sources */,
-				691E062121A4FD7600F838EF /* sqrt_of_one_minus_x_squared.c in Sources */,
-				691E06F321A4FD7600F838EF /* vad_with_level.cc in Sources */,
-				691E061D21A4FD7600F838EF /* auto_corr_to_refl_coef.c in Sources */,
 				694DE8A2219F2265009C09A7 /* VideoSource.cpp in Sources */,
 				6915307B1E6B5BAB004F643F /* logging.cpp in Sources */,
-				691E067C21A4FD7600F838EF /* lpc_tables.c in Sources */,
-				691E066221A4FD7600F838EF /* field_trial.cc in Sources */,
-				691E067621A4FD7600F838EF /* pitch_filter.c in Sources */,
-				691E070321A4FD7600F838EF /* biquad_filter.cc in Sources */,
-				691E064621A4FD7600F838EF /* webrtc_vad.c in Sources */,
-				691E064221A4FD7600F838EF /* spl_sqrt.c in Sources */,
-				691E062321A4FD7600F838EF /* filter_ar_fast_q12.c in Sources */,
-				691E07A821A4FD7700F838EF /* fft_buffer.cc in Sources */,
 				69DF15732237DEDC00C1F8ED /* TGVVideoSource.mm in Sources */,
-				691E05CA21A4FD7600F838EF /* string_view.cc in Sources */,
-				691E079C21A4FD7700F838EF /* echo_remover.cc in Sources */,
-				691E061921A4FD7600F838EF /* splitting_filter1.c in Sources */,
-				691E07BF21A4FD7700F838EF /* standalone_vad.cc in Sources */,
-				691E07CF21A4FD7700F838EF /* gmm.cc in Sources */,
-				691E080921A4FD7700F838EF /* logging_webrtc.cc in Sources */,
-				691E05F121A4FD7600F838EF /* wav_header.cc in Sources */,
 				D0230EA024A10AC600C6AE29 /* TgVoip.cpp in Sources */,
-				691E062021A4FD7600F838EF /* energy.c in Sources */,
-				691E074621A4FD7700F838EF /* aecm_core.cc in Sources */,
-				691E06FD21A4FD7600F838EF /* down_sampler.cc in Sources */,
-				691E07C821A4FD7700F838EF /* pitch_based_vad.cc in Sources */,
-				691E077A21A4FD7700F838EF /* reverb_model.cc in Sources */,
-				691E064B21A4FD7600F838EF /* vad_filterbank.c in Sources */,
-				691E069621A4FD7600F838EF /* pitch_lag_tables.c in Sources */,
-				691E076421A4FD7700F838EF /* block_processor.cc in Sources */,
-				691E069021A4FD7600F838EF /* crc.c in Sources */,
-				691E064121A4FD7600F838EF /* spl_inl.c in Sources */,
-				691E06AA21A4FD7600F838EF /* nsx_core_c.c in Sources */,
 				69DF157B2237DFE100C1F8ED /* SampleBufferDisplayLayerRenderer.mm in Sources */,
-				691E06A421A4FD7600F838EF /* splitting_filter.cc in Sources */,
-				691E07E321A4FD7700F838EF /* string_builder.cc in Sources */,
-				691E071421A4FD7700F838EF /* low_cut_filter.cc in Sources */,
-				691E074B21A4FD7700F838EF /* render_reverb_model.cc in Sources */,
-				691E081521A4FD7700F838EF /* event_tracer.cc in Sources */,
 				C2A87DE41F4B6AD3002D3F73 /* AudioUnitIO.cpp in Sources */,
-				691E060D21A4FD7600F838EF /* real_fourier.cc in Sources */,
-				691E076321A4FD7700F838EF /* suppression_filter.cc in Sources */,
-				691E065621A4FD7600F838EF /* echo_canceller3_factory.cc in Sources */,
-				691E05D021A4FD7600F838EF /* bad_optional_access.cc in Sources */,
-				691E06D221A4FD7600F838EF /* saturation_protector.cc in Sources */,
-				691E076C21A4FD7700F838EF /* vector_buffer.cc in Sources */,
-				691E071121A4FD7700F838EF /* transient_suppressor.cc in Sources */,
-				691E074A21A4FD7700F838EF /* echo_control_mobile.cc in Sources */,
-				691E078621A4FD7700F838EF /* suppression_gain.cc in Sources */,
-				691E072521A4FD7700F838EF /* gain_control_for_experimental_agc.cc in Sources */,
-				691E081021A4FD7700F838EF /* criticalsection.cc in Sources */,
-				691E05D121A4FD7600F838EF /* optional.cc in Sources */,
-				691E061E21A4FD7600F838EF /* resample_by_2_internal.c in Sources */,
-				691E066B21A4FD7600F838EF /* pitch_gain_tables.c in Sources */,
 				690725C21EBBD5F2005D860B /* NetworkSocket.cpp in Sources */,
-				691E05E921A4FD7600F838EF /* channel_buffer.cc in Sources */,
-				691E078721A4FD7700F838EF /* echo_audibility.cc in Sources */,
-				691E068921A4FD7600F838EF /* entropy_coding.c in Sources */,
-				691E061821A4FD7600F838EF /* filter_ma_fast_q12.c in Sources */,
-				691E05D921A4FD7600F838EF /* raw_logging.cc in Sources */,
-				691E079A21A4FD7700F838EF /* suppression_gain_limiter.cc in Sources */,
-				691E079821A4FD7700F838EF /* render_delay_controller2.cc in Sources */,
-				691E063E21A4FD7600F838EF /* resample_by_2.c in Sources */,
-				691E067921A4FD7600F838EF /* decode.c in Sources */,
-				691E06D121A4FD7600F838EF /* limiter.cc in Sources */,
-				691E073F21A4FD7700F838EF /* residual_echo_detector.cc in Sources */,
-				691E078521A4FD7700F838EF /* subtractor_output_analyzer.cc in Sources */,
-				691E075721A4FD7700F838EF /* frame_blocker.cc in Sources */,
-				691E07FB21A4FD7700F838EF /* stringutils.cc in Sources */,
-				691E07C521A4FD7700F838EF /* vad_audio_proc.cc in Sources */,
-				691E062E21A4FD7600F838EF /* min_max_operations_neon.c in Sources */,
-				691E05F321A4FD7600F838EF /* fir_filter_neon.cc in Sources */,
-				691E06E521A4FD7600F838EF /* pitch_search.cc in Sources */,
-				691E062421A4FD7600F838EF /* spl_init.c in Sources */,
-				691E06EF21A4FD7600F838EF /* agc2_testing_common.cc in Sources */,
 				69DF15632237DEBB00C1F8ED /* ScreamCongestionController.cpp in Sources */,
-				691E066421A4FD7600F838EF /* cpu_features.cc in Sources */,
-				691E07DB21A4FD7700F838EF /* block_mean_calculator.cc in Sources */,
 				692AB9041E6759DD00706ACC /* VoIPServerConfig.cpp in Sources */,
-				691E066A21A4FD7600F838EF /* lpc_shape_swb16_tables.c in Sources */,
-				691E071021A4FD7700F838EF /* wpd_node.cc in Sources */,
-				691E062621A4FD7600F838EF /* cross_correlation.c in Sources */,
-				691E07EE21A4FD7700F838EF /* platform_file.cc in Sources */,
-				691E072C21A4FD7700F838EF /* analog_agc.c in Sources */,
-				691E067D21A4FD7600F838EF /* lpc_gain_swb_tables.c in Sources */,
-				691E06EB21A4FD7600F838EF /* adaptive_mode_level_estimator_agc.cc in Sources */,
-				691E068421A4FD7600F838EF /* arith_routines_hist.c in Sources */,
-				691E068121A4FD7600F838EF /* encode.c in Sources */,
-				691E06E821A4FD7600F838EF /* fft_util.cc in Sources */,
-				691E06C121A4FD7600F838EF /* aec_dump.cc in Sources */,
-				691E075821A4FD7700F838EF /* subtractor.cc in Sources */,
-				691E07BC21A4FD7700F838EF /* apm_data_dumper.cc in Sources */,
-				691E076D21A4FD7700F838EF /* erl_estimator.cc in Sources */,
-				691E074121A4FD7700F838EF /* noise_suppression_impl.cc in Sources */,
 				6976FD0320F6A7060019939E /* MessageThread.cpp in Sources */,
 				692AB9021E6759DD00706ACC /* VoIPController.cpp in Sources */,
-				691E06F421A4FD7600F838EF /* limiter_db_gain_curve.cc in Sources */,
-				691E05F821A4FD7600F838EF /* sinc_resampler_neon.cc in Sources */,
-				691E07F021A4FD7700F838EF /* string_to_number.cc in Sources */,
-				691E060621A4FD7600F838EF /* wav_file.cc in Sources */,
-				691E07C621A4FD7700F838EF /* pole_zero_filter.cc in Sources */,
-				691E06A921A4FD7600F838EF /* noise_suppression_x.c in Sources */,
-				691E078121A4FD7700F838EF /* render_signal_analyzer.cc in Sources */,
-				691E06CA21A4FD7600F838EF /* agc2_common.cc in Sources */,
-				691E071221A4FD7700F838EF /* transient_detector.cc in Sources */,
-				691E069721A4FD7600F838EF /* isac.c in Sources */,
-				691E071C21A4FD7700F838EF /* aec_core.cc in Sources */,
-				691E069E21A4FD7600F838EF /* normalized_covariance_estimator.cc in Sources */,
 				692AB8D81E6759DD00706ACC /* CongestionControl.cpp in Sources */,
 				692AB8EB1E6759DD00706ACC /* OpusDecoder.cpp in Sources */,
 				69DF156D2237DEDC00C1F8ED /* TGVVideoRenderer.mm in Sources */,
-				691E071821A4FD7700F838EF /* echo_cancellation.cc in Sources */,
-				691E077821A4FD7700F838EF /* block_framer.cc in Sources */,
-				691E081121A4FD7700F838EF /* platform_thread_types.cc in Sources */,
-				691E07E821A4FD7700F838EF /* timeutils.cc in Sources */,
-				691E075121A4FD7700F838EF /* echo_remover_metrics.cc in Sources */,
-				691E066621A4FD7600F838EF /* fft.c in Sources */,
-				691E06F121A4FD7600F838EF /* fixed_gain_controller.cc in Sources */,
 				69DF15782237DEDC00C1F8ED /* VideoToolboxEncoderSource.mm in Sources */,
-				691E077F21A4FD7700F838EF /* subtractor_output.cc in Sources */,
 				697B6FD62136E1F3004C8E54 /* AudioIO.cpp in Sources */,
-				691E072D21A4FD7700F838EF /* digital_agc.c in Sources */,
-				691E064421A4FD7600F838EF /* vad_sp.c in Sources */,
-				691E070021A4FD7600F838EF /* noise_spectrum_estimator.cc in Sources */,
-				691E06B621A4FD7600F838EF /* audio_buffer.cc in Sources */,
-				691E064F21A4FD7600F838EF /* vad_gmm.c in Sources */,
-				691E05FB21A4FD7600F838EF /* resampler.cc in Sources */,
-				691E069421A4FD7600F838EF /* spectrum_ar_model_tables.c in Sources */,
-				691E067821A4FD7600F838EF /* filter_functions.c in Sources */,
-				691E06E321A4FD7600F838EF /* spectral_features.cc in Sources */,
-				691E063521A4FD7600F838EF /* filter_ar.c in Sources */,
-				691E07D421A4FD7700F838EF /* ooura_fft.cc in Sources */,
-				691E05FC21A4FD7600F838EF /* sinc_resampler_sse.cc in Sources */,
-				691E06C621A4FD7600F838EF /* config.cc in Sources */,
 				C2A87DDF1F4B6A61002D3F73 /* AudioInputAudioUnit.cpp in Sources */,
-				691E067E21A4FD7600F838EF /* bandwidth_estimator.c in Sources */,
-				691E05DA21A4FD7600F838EF /* throw_delegate.cc in Sources */,
-				691E05E821A4FD7600F838EF /* window_generator.cc in Sources */,
 				69A6DF431E9614B700000E69 /* AudioInputAudioUnitOSX.cpp in Sources */,
-				691E06F021A4FD7600F838EF /* fixed_digital_level_estimator.cc in Sources */,
-				691E061321A4FD7600F838EF /* fir_filter_c.cc in Sources */,
-				691E07F421A4FD7700F838EF /* thread_checker_impl.cc in Sources */,
-				691E07D721A4FD7700F838EF /* ooura_fft_sse2.cc in Sources */,
-				691E078F21A4FD7700F838EF /* aec3_common.cc in Sources */,
-				691E063721A4FD7600F838EF /* resample_fractional.c in Sources */,
-				691E073C21A4FD7700F838EF /* file_audio_generator.cc in Sources */,
-				691E063621A4FD7600F838EF /* vector_scaling_operations.c in Sources */,
-				691E06A121A4FD7600F838EF /* mean_variance_estimator.cc in Sources */,
-				691E077B21A4FD7700F838EF /* cascaded_biquad_filter.cc in Sources */,
-				691E06A521A4FD7600F838EF /* gain_control_impl.cc in Sources */,
-				691E07D621A4FD7700F838EF /* delay_estimator_wrapper.cc in Sources */,
-				691E076221A4FD7700F838EF /* fullband_erle_estimator.cc in Sources */,
-				691E075621A4FD7700F838EF /* echo_path_variability.cc in Sources */,
-				691E063B21A4FD7600F838EF /* randomization_functions.c in Sources */,
-				691E07C121A4FD7700F838EF /* pitch_internal.cc in Sources */,
-				691E077D21A4FD7700F838EF /* render_buffer.cc in Sources */,
-				691E06C921A4FD7600F838EF /* interpolated_gain_curve.cc in Sources */,
-				691E071721A4FD7700F838EF /* three_band_filter_bank.cc in Sources */,
-				691E061C21A4FD7600F838EF /* dot_product_with_scale.cc in Sources */,
-				691E06B721A4FD7600F838EF /* typing_detection.cc in Sources */,
-				691E060721A4FD7600F838EF /* spl_sqrt_floor.c in Sources */,
-				691E072721A4FD7700F838EF /* loudness_histogram.cc in Sources */,
-				691E07DA21A4FD7700F838EF /* ooura_fft_neon.cc in Sources */,
-				691E063121A4FD7600F838EF /* resample.c in Sources */,
-				691E061B21A4FD7600F838EF /* downsample_fast_neon.c in Sources */,
-				691E066E21A4FD7600F838EF /* filterbanks.c in Sources */,
 				C2A87DE01F4B6A61002D3F73 /* AudioOutputAudioUnit.cpp in Sources */,
-				691E07E621A4FD7700F838EF /* aligned_malloc.cc in Sources */,
-				691E07EA21A4FD7700F838EF /* logging_mac.mm in Sources */,
-				691E06EC21A4FD7600F838EF /* vector_float_frame.cc in Sources */,
-				691E07A421A4FD7700F838EF /* block_processor2.cc in Sources */,
-				691E065821A4FD7600F838EF /* rnn_vad_weights.cc in Sources */,
-				691E07A621A4FD7700F838EF /* block_delay_buffer.cc in Sources */,
-				691E06EE21A4FD7600F838EF /* noise_level_estimator.cc in Sources */,
-				691E072621A4FD7700F838EF /* agc.cc in Sources */,
-				691E072321A4FD7700F838EF /* voice_detection_impl.cc in Sources */,
-				691E073621A4FD7700F838EF /* audio_processing_impl.cc in Sources */,
-				691E081321A4FD7700F838EF /* event.cc in Sources */,
-				691E072821A4FD7700F838EF /* agc_manager_direct.cc in Sources */,
-				691E06A821A4FD7600F838EF /* nsx_core.c in Sources */,
-				691E06CF21A4FD7600F838EF /* adaptive_agc.cc in Sources */,
-				691E061021A4FD7600F838EF /* sparse_fir_filter.cc in Sources */,
-				691E070921A4FD7700F838EF /* wpd_tree.cc in Sources */,
-				691E060021A4FD7600F838EF /* push_resampler.cc in Sources */,
-				691E064021A4FD7600F838EF /* resample_48khz.c in Sources */,
-				691E062B21A4FD7600F838EF /* division_operations.c in Sources */,
-				691E077221A4FD7700F838EF /* skew_estimator.cc in Sources */,
-				691E07D821A4FD7700F838EF /* delay_estimator.cc in Sources */,
-				691E063921A4FD7600F838EF /* ilbc_specific_functions.c in Sources */,
 				69A6DF451E9614B700000E69 /* AudioOutputAudioUnitOSX.cpp in Sources */,
-				691E063421A4FD7600F838EF /* refl_coef_to_lpc.c in Sources */,
-				691E075221A4FD7700F838EF /* matched_filter_lag_aggregator.cc in Sources */,
-				691E071F21A4FD7700F838EF /* aec_core_neon.cc in Sources */,
-				691E063A21A4FD7600F838EF /* complex_bit_reverse.c in Sources */,
-				691E07B921A4FD7700F838EF /* echo_control_mobile_impl.cc in Sources */,
-				691E069321A4FD7600F838EF /* decode_bwe.c in Sources */,
-				691E062521A4FD7600F838EF /* lpc_to_refl_coef.c in Sources */,
 				692AB8E61E6759DD00706ACC /* JitterBuffer.cpp in Sources */,
-				691E075F21A4FD7700F838EF /* aec3_fft.cc in Sources */,
-				691E07B621A4FD7700F838EF /* reverb_frequency_response.cc in Sources */,
-				691E060C21A4FD7600F838EF /* audio_converter.cc in Sources */,
-				691E065021A4FD7600F838EF /* audio_frame.cc in Sources */,
-				691E07FA21A4FD7700F838EF /* stringencode.cc in Sources */,
-				691E076E21A4FD7700F838EF /* aec_state.cc in Sources */,
-				691E062C21A4FD7600F838EF /* auto_correlation.c in Sources */,
 				692AB8CB1E6759DD00706ACC /* AudioInput.cpp in Sources */,
-				691E068F21A4FD7600F838EF /* arith_routines.c in Sources */,
-				691E072021A4FD7700F838EF /* aec_core_sse2.cc in Sources */,
-				691E06B221A4FD7600F838EF /* noise_suppression.c in Sources */,
-				691E076A21A4FD7700F838EF /* render_delay_buffer.cc in Sources */,
-				691E072E21A4FD7700F838EF /* utility.cc in Sources */,
-				691E05F421A4FD7600F838EF /* audio_util.cc in Sources */,
 				692AB8CD1E6759DD00706ACC /* AudioOutput.cpp in Sources */,
-				691E074821A4FD7700F838EF /* aecm_core_neon.cc in Sources */,
-				691E065421A4FD7600F838EF /* echo_canceller3_config.cc in Sources */,
-				691E06D421A4FD7600F838EF /* spectral_features_internal.cc in Sources */,
-				691E06DC21A4FD7600F838EF /* pitch_search_internal.cc in Sources */,
-				691E061421A4FD7600F838EF /* ring_buffer.c in Sources */,
-				691E07C221A4FD7700F838EF /* vad_circular_buffer.cc in Sources */,
 				C2A87DD81F4B6A33002D3F73 /* Resampler.cpp in Sources */,
 				697B6FDA2136E2D9004C8E54 /* AudioIOCallback.cpp in Sources */,
-				691E079721A4FD7700F838EF /* reverb_decay_estimator.cc in Sources */,
-				691E060321A4FD7600F838EF /* sinusoidal_linear_chirp_source.cc in Sources */,
-				691E07B421A4FD7700F838EF /* filter_analyzer.cc in Sources */,
 				69EBC7942136D277003CFE90 /* DarwinSpecific.mm in Sources */,
 				692AB8D11E6759DD00706ACC /* Buffers.cpp in Sources */,
-				691E067A21A4FD7600F838EF /* lattice.c in Sources */,
-				691E064521A4FD7600F838EF /* vad.cc in Sources */,
-				691E05EA21A4FD7600F838EF /* fir_filter_factory.cc in Sources */,
-				691E063F21A4FD7600F838EF /* get_hanning_window.c in Sources */,
-				691E07AF21A4FD7700F838EF /* comfort_noise_generator.cc in Sources */,
 				692AB8E91E6759DD00706ACC /* MediaStreamItf.cpp in Sources */,
 				692AB8DA1E6759DD00706ACC /* EchoCanceller.cpp in Sources */,
-				691E07BE21A4FD7700F838EF /* voice_activity_detector.cc in Sources */,
-				691E05F221A4FD7600F838EF /* real_fourier_ooura.cc in Sources */,
-				691E077521A4FD7700F838EF /* echo_path_delay_estimator.cc in Sources */,
-				691E068221A4FD7600F838EF /* lpc_analysis.c in Sources */,
-				691E077921A4FD7700F838EF /* erle_estimator.cc in Sources */,
-				691E074721A4FD7700F838EF /* aecm_core_c.cc in Sources */,
-				691E074E21A4FD7700F838EF /* reverb_model_fallback.cc in Sources */,
-				691E07B321A4FD7700F838EF /* shadow_filter_update_gain.cc in Sources */,
-				691E06FF21A4FD7600F838EF /* signal_classifier.cc in Sources */,
-				691E070721A4FD7700F838EF /* moving_moments.cc in Sources */,
-				691E073D21A4FD7700F838EF /* gain_controller2.cc in Sources */,
-				691E067B21A4FD7600F838EF /* intialize.c in Sources */,
-				691E06C021A4FD7600F838EF /* audio_generator_factory.cc in Sources */,
-				691E07B721A4FD7700F838EF /* decimator.cc in Sources */,
-				691E06B121A4FD7600F838EF /* nsx_core_neon.c in Sources */,
-				691E06D721A4FD7600F838EF /* rnn.cc in Sources */,
-				691E068A21A4FD7600F838EF /* isac_vad.c in Sources */,
-				691E06C521A4FD7600F838EF /* audio_processing.cc in Sources */,
-				691E060A21A4FD7600F838EF /* fft4g.c in Sources */,
-				691E061221A4FD7600F838EF /* smoothing_filter.cc in Sources */,
 				694DE8A1219F2265009C09A7 /* VideoRenderer.cpp in Sources */,
-				691E063D21A4FD7600F838EF /* copy_set_operations.c in Sources */,
-				691E069121A4FD7600F838EF /* lpc_shape_swb12_tables.c in Sources */,
-				691E078821A4FD7700F838EF /* block_processor_metrics.cc in Sources */,
-				691E07A021A4FD7700F838EF /* matrix_buffer.cc in Sources */,
-				691E07FC21A4FD7700F838EF /* checks.cc in Sources */,
-				691E066321A4FD7600F838EF /* metrics.cc in Sources */,
-				691E061721A4FD7600F838EF /* complex_fft.c in Sources */,
-				691E076921A4FD7700F838EF /* render_delay_controller_metrics.cc in Sources */,
 				692AB8D31E6759DD00706ACC /* VoIPGroupController.cpp in Sources */,
-				691E062221A4FD7600F838EF /* downsample_fast.c in Sources */,
-				691E064C21A4FD7600F838EF /* vad_core.c in Sources */,
-				691E063821A4FD7600F838EF /* real_fft.c in Sources */,
-				691E066C21A4FD7600F838EF /* arith_routines_logist.c in Sources */,
-				691E060221A4FD7600F838EF /* sinc_resampler.cc in Sources */,
 				69A2076521AF628A003AC4F9 /* json11.cpp in Sources */,
-				691E076821A4FD7700F838EF /* subband_erle_estimator.cc in Sources */,
-				691E07A521A4FD7700F838EF /* echo_canceller3.cc in Sources */,
-				691E070621A4FD7700F838EF /* adaptive_mode_level_estimator.cc in Sources */,
-				691E076F21A4FD7700F838EF /* adaptive_fir_filter.cc in Sources */,
-				691E05C921A4FD7600F838EF /* memutil.cc in Sources */,
-				691E079B21A4FD7700F838EF /* main_filter_update_gain.cc in Sources */,
 				692AB8CF1E6759DD00706ACC /* BlockingQueue.cpp in Sources */,
-				691E077121A4FD7700F838EF /* render_delay_controller.cc in Sources */,
-				691E06E921A4FD7600F838EF /* lp_residual.cc in Sources */,
 				690725BE1EBBD5DE005D860B /* NetworkSocketPosix.cpp in Sources */,
-				691E06BF21A4FD7600F838EF /* audio_processing_statistics.cc in Sources */,
 				6971220F20C8107F00971C2C /* PacketReassembler.cpp in Sources */,
-				691E065B21A4FD7600F838EF /* kiss_fft.cc in Sources */,
-				691E06CD21A4FD7600F838EF /* gain_applier.cc in Sources */,
-				691E05F621A4FD7600F838EF /* fir_filter_sse.cc in Sources */,
-				691E063321A4FD7600F838EF /* min_max_operations.c in Sources */,
-				691E071A21A4FD7700F838EF /* aec_resampler.cc in Sources */,
-				691E06A021A4FD7600F838EF /* circular_buffer.cc in Sources */,
-				691E06AD21A4FD7600F838EF /* ns_core.c in Sources */,
-				691E078B21A4FD7700F838EF /* moving_average.cc in Sources */,
-				691E069A21A4FD7600F838EF /* rms_level.cc in Sources */,
-				691E078E21A4FD7700F838EF /* reverb_model_estimator.cc in Sources */,
-				691E070121A4FD7600F838EF /* compute_interpolated_gain_curve.cc in Sources */,
 				692AB8ED1E6759DD00706ACC /* OpusEncoder.cpp in Sources */,
-				691E06E721A4FD7600F838EF /* features_extraction.cc in Sources */,
-				691E061A21A4FD7600F838EF /* levinson_durbin.c in Sources */,
-				691E066921A4FD7600F838EF /* pitch_estimator.c in Sources */,
-				691E05CC21A4FD7600F838EF /* ascii.cc in Sources */,
-				691E079321A4FD7700F838EF /* matched_filter.cc in Sources */,
-				691E067221A4FD7600F838EF /* transform.c in Sources */,
-				691E069F21A4FD7600F838EF /* moving_max.cc in Sources */,
-				691E063221A4FD7600F838EF /* cross_correlation_neon.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3141,7 +2587,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3199,9 +2645,8 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$PROJECT_DIR/../../core-xprojects/libopus/build/libopus/include",
-					"$PROJECT_DIR/../../core-xprojects/openssl/build/openssl/include",
-					webrtc_dsp/,
+					"${PROJECT_DIR}/../../core-xprojects/libopus/build/libopus/include",
+					"${PROJECT_DIR}/../../core-xprojects/openssl/build/openssl/include",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -3217,6 +2662,7 @@
 					"-DTGVOIP_USE_DESKTOP_DSP",
 					"-DWEBRTC_MAC",
 					"-DWEBRTC_NS_FLOAT",
+					"-DTGVOIP_NO_DSP",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.grishka.libtgvoip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3275,7 +2721,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -3333,9 +2779,8 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$PROJECT_DIR/../../core-xprojects/libopus/build/libopus/include",
-					"$PROJECT_DIR/../../core-xprojects/openssl/build/openssl/include",
-					webrtc_dsp/,
+					"${PROJECT_DIR}/../../core-xprojects/libopus/build/libopus/include",
+					"${PROJECT_DIR}/../../core-xprojects/openssl/build/openssl/include",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -3351,6 +2796,7 @@
 					"-DTGVOIP_USE_DESKTOP_DSP",
 					"-DWEBRTC_MAC",
 					"-DWEBRTC_NS_FLOAT",
+					"-DTGVOIP_NO_DSP",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.grishka.libtgvoip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
