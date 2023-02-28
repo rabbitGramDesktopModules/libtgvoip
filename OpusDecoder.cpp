@@ -68,7 +68,6 @@ void tgvoip::OpusDecoder::Initialize(bool isAsync, bool needEC){
 	remainingDataLen=0;
 	processedBuffer=NULL;
 	prevWasEC=false;
-	prevLastSample=0;
 }
 
 tgvoip::OpusDecoder::~OpusDecoder(){
@@ -235,7 +234,6 @@ int tgvoip::OpusDecoder::DecodeNextFrame(){
 			}
 		}
 		prevWasEC=isEC;
-		prevLastSample=decodeBuffer[size-1];
 	}else{ // do packet loss concealment
 		consecutiveLostPackets++;
 		if(consecutiveLostPackets>2 && enableDTX){

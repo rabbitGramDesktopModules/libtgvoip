@@ -79,7 +79,6 @@ private:
 	unsigned int packetsPerFrame;
 	ptrdiff_t remainingDataLen;
 	bool prevWasEC;
-	int16_t prevLastSample;
 };
 }
 
